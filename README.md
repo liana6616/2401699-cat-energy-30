@@ -2,7 +2,6 @@
 
 * Студент: [Лиана Вербовская](https://up.htmlacademy.ru/adaptive/30/user/2401699).
 * Наставник: [Андрей Изосимов](https://up.htmlacademy.ru/adaptive/30/user/605037).
-.
 
 ---
 
