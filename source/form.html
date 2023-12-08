@@ -12,11 +12,11 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__logo">
-      <a class="main-header__logo" href="#">
+      <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-link" src="images/icons/logo-mobile.svg" width="33" height="38"
           alt="Лого Питание для котов.">
       </a>
-      <a class="main-header__logo" href="#">
+      <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-link" src="images/icons/logo-mobile2.svg" width="33" height="38"
           alt="Название питания для котов.">
       </a>
@@ -28,21 +28,23 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">
+            <a class="site-list__item-title" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">
+            <a class="site-list__item-title" href="catalog.html">
               Каталог продукции
             </a>
           </li>
-          <li class="site-list_item  site-list_item--active">
-            Подбор программы
+          <li class="site-list__item  site-list__item--active">
+            <a class="site-list__item-title">
+              Подбор программы
             </a>
           </li>
         </ul>
       </div>
+    </nav>
   </header>
   <main class="main-container">
     <h1 class="main-container__title">Подбор программы</h1>
@@ -60,7 +62,7 @@
         </p>
         <p class="form-details__age">
           <label class="form-label" for="age">Возраст (лет):</label>
-          <input class="form-input" id="ade" type="number" placeholder="7">
+          <input class="form-input" id="age" type="number" placeholder="7">
         </p>
       </fieldset>
       <fieldset class="form-details__filter">
@@ -86,12 +88,11 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form-details_filter form-details_filter--email" action="#" method="post">
+      <fieldset class="form-details__filter form-details__filter--email">
         <legend class="form-details__contacts-title">Контактные данные (владельца кота)</legend>
         <p class="form-email">
           <label class="form-label" for="email">E-mail:*</label>
-          <input class="form-input" id="email" type="email" placeholder="kuklachev@gmail.com" name="email"
-            id="newsletter-email" required>
+          <input class="form-input" id="email" type="email" placeholder="kuklachev@gmail.com" name="email" required>
         </p>
         <p class="form-number">
           <label class="form-label" for="number">Телефон:*</label>
@@ -131,7 +132,7 @@
           </li>
         </ul>
       </fieldset>
-      <button class="form-details_catalog-item_button" type="submit">отправить заявку</button>
+      <button class="form-details__catalog-item__button" type="submit">отправить заявку</button>
       <span class="form-details__required">* — Обязательные поля</span>
     </form>
   </main>
@@ -162,7 +163,7 @@
             </a>
           </li>
           <li class="main-footer__social-item">
-            <a class="main-footer_social-link main-footer_social-link-youtub" href="#">
+            <a class="main-footer__social-link main-footer__social-link-youtub" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" viewBox="0 0 28 22" fill="none" role="img"
                 aria-label="Ссылка на ютуб">
                 <path
@@ -172,7 +173,7 @@
             </a>
           </li>
           <li class="main-footer__social-item">
-            <a class="main-footer_social-link main-footer_social-link-telegram" href="#">
+            <a class="main-footer__social-link main-footer__social-link-telegram" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" viewBox="0 0 28 22" fill="none" role="img"
                 aria-label="Ссылка на телеграм">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -184,8 +185,8 @@
         </ul>
       </div>
       <div class="main-footer__logo-academy">
-        <a class="main-footer__logo-academy-link" href="https://htmlacademy.ru/">HTML Academy</a>
-        <a class="main-footer__logo-academy-link" href="https://htmlacademy.ru/">
+        <a class="main-footer__logo-academy-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="main-footer__logo-academy-link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 27 34" fill="none" role="img"
             aria-label="Лого академия">
             <g clip-path="url(#clip0_100921_344)">

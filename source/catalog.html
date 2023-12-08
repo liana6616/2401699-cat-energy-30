@@ -10,15 +10,14 @@
 </head>
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="#">
+    <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-link" src="images/icons/logo-mobile.svg" width="33" height="38"
         alt="Лого Питание для котов.">
     </a>
-    <a class="main-header__logo" href="#">
+    <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-link" src="images/icons/logo-mobile2.svg" width="33" height="38"
         alt="Название питания для котов.">
     </a>
-    </div>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -26,21 +25,23 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">
+            <a class="site-list__title" href="index.html">
               Главная
             </a>
           </li>
-          <li class="site-list_item site-list_item--active">
-            Каталог продукции
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__title">
+              Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">
+            <a class="site-list__title" href="form.html">
               Подбор программы
             </a>
           </li>
         </ul>
       </div>
+    </nav>
   </header>
   <main class="main-container">
     <h1 class="visually-hidden">Страница каталога</h1>
@@ -48,7 +49,7 @@
       <h2 class="main-container__title">Каталог продукции</h2>
       <ul class="catalog-list">
         <li class="catalog-item">
-          <a class="catalog-link" href="#"">
+          <a class="catalog-link" href="#">
             <img class="image" src="images/chicken.svg" width="68" height="86" alt="Еда Cat Energy Pro 500г со вкусом курицы">
             <h3 class="catalog-item__title">Cat Energy Pro 500г</h3>
           </a>
@@ -211,20 +212,18 @@
         <li class="catalog-item catalog-item--picture">
           <h3 class="catalog-item__title">Показать еще 100500 товаров</h3>
           <p class="">На самом деле вкусов гораздо больше!</p>
-          <a class="catalog-item_button catalog-item_button--dropdown" href="#">показать все</a>
+          <a class="catalog-item__button catalog-item__button--dropdown" href="#">показать все</a>
         </li>
       </ul>
     </section>
     <section class="main-container__additional-products">
-      <h2 class=main-container__additional-products-title">Дополнительные товары</h2>
+      <h2 class="main-container__additional-products-title">Дополнительные товары</h2>
       <div class="main-container__additional-products-wrapper">
         <ul class="main-container__additional-products-list">
           <li class="main-container__additional-products-item">
             <table class="main-container__card-table">
               <tr class="main-container__card-row">
                 <th class="main-container__additional-products-subject">cахарозаменитель</th>
-              </tr>
-              <tr class="main-container__card-row">
                 <td class="main-container__card-row-price">1 упаковка (100 г)</td>
                 <td class="main-container__card-row-price">200 ₽</td>
               </tr>
@@ -235,8 +234,6 @@
             <table class="main-container__card-table">
               <tr class="main-container__card-row">
                 <th class="main-container__additional-products-subject">питьевая вода</th>
-              </tr>
-              <tr class="main-container__card-row">
                 <td class="main-container__card-row-price">5 литров</td>
                 <td class="main-container__card-row-price">50 ₽</td>
               </tr>
@@ -247,8 +244,6 @@
             <table class="main-container__card-table">
               <tr class="main-container__card-row">
                 <th class="main-container__additional-products-subject">молоко</th>
-              </tr>
-              <tr class="main-container__card-row">
                 <td class="main-container__card-row-price">1 литр</td>
                 <td class="main-container__card-row-price">100 ₽</td>
               </tr>
@@ -259,8 +254,6 @@
             <table class="main-container__card-table">
               <tr class="main-container__card-row">
                 <th class="main-container__additional-products-subject">витамины</th>
-              </tr>
-              <tr class="main-container__card-row">
                 <td class="main-container__card-row-price">1 упаковка (30 г)</td>
                 <td class="main-container__card-row-price">300 ₽</td>
               </tr>
@@ -293,7 +286,7 @@
       <div class="main-footer__social">
         <ul class="main-footer__social-list">
           <li class="main-footer__social-item">
-            <a class="main-footer__social-link social-link-vkontakte" href="#">
+            <a class="main-footer__social-link main-footer__social-link-vkontakte" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" viewBox="0 0 28 22" fill="none" role="img"
                 aria-label="Ссылка на вконтакте">
                 <path
@@ -303,7 +296,7 @@
             </a>
           </li>
           <li class="main-footer__social-item">
-            <a class="main-footer__social-link main-footer_social-link-youtub" href="#">
+            <a class="main-footer__social-link main-footer__social-link-youtub" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" viewBox="0 0 28 22" fill="none" role="img"
                 aria-label="Ссылка на ютуб">
                 <path
@@ -313,7 +306,7 @@
             </a>
           </li>
           <li class="main-footer__social-item">
-            <a class="main-footer__social-link main-footer_social-link-telegram" href="#">
+            <a class="main-footer__social-link main-footer__social-link-telegram" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" viewBox="0 0 28 22" fill="none" role="img"
                 aria-label="Ссылка на телеграм">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -325,8 +318,8 @@
         </ul>
       </div>
       <div class="main-footer__logo-academy">
-        <a class="main-footer__logo-academy-link" href="https://htmlacademy.ru/">HTML Academy</a>
-        <a class="main-footer__logo-academy-link" href="https://htmlacademy.ru/">
+        <a class="main-footer__logo-academy-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="main-footer__logo-academy-link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 27 34" fill="none" role="img"
             aria-label="Лого академия">
             <g clip-path="url(#clip0_100921_344)">
