@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Название проекта</title>
+  <title>Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
@@ -16,23 +16,23 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__logo">
-      <a class="main-header__logo" href="#">
+      <a class="main-header__logo-image" href="#">
         <picture>
           <source srcset="images/logo-desktop@1x.webp 1x, images/logo-desktop@2x.webp 2x" media="(min-width: 1440px)"
             type="image/webp" width="70" height="59">
           <source srcset="images/logo-tablet@1x.webp 1x, images/logo-tablet@2x.webp 2x" media="(min-width: 768px)"
             type="image/webp" width="60" height="50">
-          <source srcset="images/images/logo-mobile@1x.webp 1x, images/images/logo-mobile@2x.webp 2x" type="image/webp"
+          <source srcset="images/logo-mobile@1x.webp 1x, images/logo-mobile@2x.webp 2x" type="image/webp"
             width="33" height="38">
           <source srcset="images/logo-desktop@1x.png 1x, images/logo-desktop@2x.png 2x" media="(min-width: 1440px)"
             type="image/png" width="70" height="59">
-          <source srcset="images/images/logo-tablet@1x.png 1x, images/logo-tablet@2x.png 2x" media="(min-width: 768px)"
+          <source srcset="images/logo-tablet@1x.png 1x, images/logo-tablet@2x.png 2x" media="(min-width: 768px)"
             type="image/png" width="60" height="50">
           <img class="image image--color" src="images/logo-mobile@1x.png" srcset="images/logo-mobile@2x.png 2x"
             width="33" height="38" alt="Лого Питание для котов.">
         </picture>
       </a>
-      <a class="main-header__logo" href="#">
+      <a class="main-header__logo-image" href="#">
         <svg xmlns="http://www.w3.org/2000/svg" width="128" height="24" viewBox="0 0 128 24" fill="none">
           <path
             d="M1.6236 21.9574C0.489608 20.2815 -0.0733133 18.2722 0.0213584 16.2383V7.7617C-0.115966 5.70593 0.411707 3.66097 1.52346 1.94043C2.62499 0.612766 4.32737 0 6.83086 0C9.33436 0 10.9366 0.612766 11.938 1.73617C13.0252 3.15904 13.56 4.9407 13.4401 6.74043V8.78298H8.53324V6.43404C8.57287 5.73932 8.47057 5.04378 8.23282 4.39149C8.10574 4.12819 7.90433 3.90969 7.65449 3.76409C7.40465 3.61849 7.11781 3.55245 6.83086 3.57447C6.12989 3.57447 5.62919 3.77872 5.42891 4.28936C5.20237 5.015 5.10073 5.77516 5.12849 6.53617V17.4638C5.0756 18.2022 5.21373 18.9417 5.52905 19.6085C5.72933 20.1192 6.23003 20.3234 6.931 20.3234C7.63198 20.3234 8.03254 20.1192 8.23282 19.6085C8.4605 18.9183 8.56232 18.1914 8.53324 17.4638V15.0128H13.4401V17.0553C13.5419 18.8844 13.0103 20.6918 11.938 22.1617C10.9366 23.3872 9.23422 24 6.83086 24C4.42751 23.8979 2.62499 23.2851 1.6236 21.9574Z"
@@ -70,17 +70,17 @@
       <nav class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list_link site-list_link--active" href="index.html" aria-current="page">
+            <a class="site-list__link site-list__link--active" href="index.html" aria-current="page">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__title" href="catalog.html">
+            <a class="site-list__link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__title" href="form.html">
+            <a class="site-list__link" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -89,23 +89,25 @@
     </nav>
   </header>
   <main class="main-container">
-    <h1 class="main-container__title">Функциональное питания для котов</h1>
-    <p class="main-container__title-text">Занялся собой? Займись котом!</p>
-    <picture>
-      <source srcset="images/index-can-desktop@1x.webp 1x, images/index-can-desktop@2x.webp 2x"
-        media="(min-width: 1440px)" type="image/webp" width="552" height="499">
-      <source srcset="images/index-can-tablet@1x.webp 1x, images/index-can-tablet@2x.webp 2x" media="(min-width: 768px)"
-        type="image/webp" width="709" height="609">
-      <source srcset="images/images/index-can-mobile@1x.webp 1x, images/images/index-can-mobile@2x.webp 2x"
-        type="image/webp" width="280" height="270">
-      <source srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x"
-        media="(min-width: 1440px)" type="image/png" width="552" height="499">
-      <source srcset="images/images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x"
-        media="(min-width: 768px)" type="image/png" width="709" height="609">
-      <img class="image image--color" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x"
-        width="280" height="270" alt="Питание для котов.">
-    </picture>
-    <button class="main-container__button" type="submit">Подобрать программу</button>
+    <div class="main-container__wrapper">
+      <h1 class="main-container__title color-text">Функциональное Питание для котов</h1>
+      <p class="main-container__title-text color-text">Занялся собой? Займись котом!</p>
+      <picture>
+        <source srcset="images/index-can-desktop@1x.webp 1x, images/index-can-desktop@2x.webp 2x"
+          media="(min-width: 1440px)" type="image/webp" width="552" height="499">
+        <source srcset="images/index-can-tablet@1x.webp 1x, images/index-can-tablet@2x.webp 2x"
+          media="(min-width: 768px)" type="image/webp" width="709" height="609">
+        <source srcset="images/index-can-mobile@1x.webp 1x, images/index-can-mobile@2x.webp 2x"
+          type="image/webp" width="280" height="270">
+        <source srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x"
+          media="(min-width: 1440px)" type="image/png" width="552" height="499">
+        <source srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x"
+          media="(min-width: 768px)" type="image/png" width="709" height="609">
+        <img class="image image--color" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x"
+          width="280" height="270" alt="Питание для котов.">
+      </picture>
+    </div>
+    <button class="button" type="submit">Подобрать программу</button>
     <section class="features">
       <div class="features__wrapper">
         <h2 class="visually-hidden">Выбор питания</h2>
@@ -157,11 +159,11 @@
         <div class="sample__info">
           <dl class="sample__info-list">
             <div class="sample__info-item">
-              <dt class="sample__info-weight">5 кг</dt>
+              <dt class="sample__info-text">5 кг</dt>
               <dd class="sample__info-description">снижение веса</dd>
             </div>
             <div class="sample__info-item">
-              <dt class="sample__info-number">60 дней</dt>
+              <dt class="sample__info-text">60 дней</dt>
               <dd class="sample__info-description">затрачено времени</dd>
             </div>
           </dl>
@@ -171,9 +173,9 @@
           <picture>
             <source srcset="images/cat-before-tablet@1x.webp 1x, images/cat-before-tablet@2x.webp 2x"
               media="(min-width: 768px)" type="image/webp" width="560" height="512">
-            <source srcset="images/images/cat-before-mobile@1x.webp 1x, images/images/cat-before-mobile@1x.webp 2x"
+            <source srcset="images/cat-before-mobile@1x.webp 1x, images/cat-before-mobile@1x.webp 2x"
               type="image/webp" width="280" height="256">
-            <source srcset="images/images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x"
+            <source srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x"
               media="(min-width: 768px)" type="image/png" width="560" height="512">
             <img class="image image--color" src="images/cat-before-mobile@1x.png"
               srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256"
@@ -189,9 +191,9 @@
           <picture>
             <source srcset="cat-after-tablet@1x.webp 1x, images/cat-after-tablet@2x.webp 2x" media="(min-width: 768px)"
               type="image/webp" width="560" height="512">
-            <source srcset="images/images/cat-after-mobile@1x.webp 1x, images/images/cat-after-mobile@1x.webp 2x"
+            <source srcset="images/cat-after-mobile@1x.webp 1x, images/cat-after-mobile@1x.webp 2x"
               type="image/webp" width="280" height="256">
-            <source srcset="images/images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x"
+            <source srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x"
               media="(min-width: 768px)" type="image/png" width="560" height="512">
             <img class="image image--color" src="images/cat-after-mobile@1x.png"
               srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256"

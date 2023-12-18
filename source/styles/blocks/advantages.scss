@@ -1,0 +1,52 @@
+// .advantages {
+
+// }
+
+.advantages__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+// .advantages__list {
+
+// }
+
+// .advantages_item {
+
+// }
+
+.advantages_item--composition {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../images/composition.svg");
+}
+
+.advantages_item--apperianse {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../images/apperianse.svg");
+}
+
+.advantages_item--eat {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../images/eat.svg");
+}
+
+.advantages_item--time {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../images/time.svg");
+}
+
+.advantages__discription {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  color: #444444;
+  min-width: 200px;
+}

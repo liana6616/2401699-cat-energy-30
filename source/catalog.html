@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Название проекта</title>
+  <title>Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
@@ -16,23 +16,23 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__logo">
-      <a class="main-header__logo" href="#">
+      <a class="main-header__logo-image" href="#">
         <picture>
           <source srcset="images/logo-desktop@1x.webp 1x, images/logo-desktop@2x.webp 2x" media="(min-width: 1440px)"
             type="image/webp" width="70" height="59">
           <source srcset="images/logo-tablet@1x.webp 1x, images/logo-tablet@2x.webp 2x" media="(min-width: 768px)"
             type="image/webp" width="60" height="50">
-          <source srcset="images/images/logo-mobile@1x.webp 1x, images/images/logo-mobile@2x.webp 2x" type="image/webp"
+          <source srcset="images/logo-mobile@1x.webp 1x, images/logo-mobile@2x.webp 2x" type="image/webp"
             width="33" height="38">
           <source srcset="images/logo-desktop@1x.png 1x, images/logo-desktop@2x.png 2x" media="(min-width: 1440px)"
             type="image/png" width="70" height="59">
-          <source srcset="images/images/logo-tablet@1x.png 1x, images/logo-tablet@2x.png 2x" media="(min-width: 768px)"
+          <source srcset="images/logo-tablet@1x.png 1x, images/logo-tablet@2x.png 2x" media="(min-width: 768px)"
             type="image/png" width="60" height="50">
           <img class="image image--color" src="images/logo-mobile@1x.png" srcset="images/logo-mobile@2x.png 2x"
             width="33" height="38" alt="Лого Питание для котов.">
         </picture>
       </a>
-      <a class="main-header__logo" href="#">
+      <a class="main-header__logo-image" href="#">
         <svg xmlns="http://www.w3.org/2000/svg" width="128" height="24" viewBox="0 0 128 24" fill="none">
           <path
             d="M1.6236 21.9574C0.489608 20.2815 -0.0733133 18.2722 0.0213584 16.2383V7.7617C-0.115966 5.70593 0.411707 3.66097 1.52346 1.94043C2.62499 0.612766 4.32737 0 6.83086 0C9.33436 0 10.9366 0.612766 11.938 1.73617C13.0252 3.15904 13.56 4.9407 13.4401 6.74043V8.78298H8.53324V6.43404C8.57287 5.73932 8.47057 5.04378 8.23282 4.39149C8.10574 4.12819 7.90433 3.90969 7.65449 3.76409C7.40465 3.61849 7.11781 3.55245 6.83086 3.57447C6.12989 3.57447 5.62919 3.77872 5.42891 4.28936C5.20237 5.015 5.10073 5.77516 5.12849 6.53617V17.4638C5.0756 18.2022 5.21373 18.9417 5.52905 19.6085C5.72933 20.1192 6.23003 20.3234 6.931 20.3234C7.63198 20.3234 8.03254 20.1192 8.23282 19.6085C8.4605 18.9183 8.56232 18.1914 8.53324 17.4638V15.0128H13.4401V17.0553C13.5419 18.8844 13.0103 20.6918 11.938 22.1617C10.9366 23.3872 9.23422 24 6.83086 24C4.42751 23.8979 2.62499 23.2851 1.6236 21.9574Z"
@@ -70,17 +70,17 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__title" href="index.html">
+            <a class="site-list__link" href="index.html">
               Главная
             </a>
           </li>
-          <li class="site-list_item site-list_item--active">
-            <a class="site-list__title" href="catalog.html" aria-current="page">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active" href="catalog.html" aria-current="page">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__title" href="form.html">
+            <a class="site-list__link" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -111,19 +111,19 @@
           <div class="catalog-item__card-wrapper">
             <table class="catalog-item__card-table">
               <tr class="catalog-item__card-row">
-                <td class="name">Масса</td>
-                <td class="value">500 г</td>
+                <td class="catalog-style name">Масса</td>
+                <td class="catalog-style value">500 г</td>
               </tr>
               <tr class="catalog-item__card-row">
-                <td class="name">Вкус</td>
-                <td class="value">Курица</td>
+                <td class="catalog-style name">Вкус</td>
+                <td class="catalog-style value">Курица</td>
               </tr>
               <tr class="catalog-item__card-row">
-                <td class="name">Цена</td>
-                <td class="value">700 ₽</td>
+                <td class="catalog-style name">Цена</td>
+                <td class="catalog-style value">700 ₽</td>
               </tr>
             </table>
-            <a class="catalog-item__button" href="#">Заказать</a>
+            <a class="button" href="#">Заказать</a>
           </div>
         </li>
         <li class="catalog-item">
@@ -144,19 +144,19 @@
           <div class="catalog-item__card-wrapper">
             <table class="catalog-item__card-table">
               <tr class="catalog-item__card-row">
-                <td class="name">Масса</td>
-                <td class="value">1000 г</td>
+                <td class="catalog-style name">Масса</td>
+                <td class="catalog-style value">1000 г</td>
               </tr>
               <tr class="catalog-item__card-row">
-                <td class="name">Вкус</td>
-                <td class="value">Курица</td>
+                <td class="catalog-style name">Вкус</td>
+                <td class="catalog-style value">Курица</td>
               </tr>
               <tr class="catalog-item__card-row">
-                <td class="name">Цена</td>
-                <td class="value">1000 ₽</td>
+                <td class="catalog-style name">Цена</td>
+                <td class="catalog-style value">1000 ₽</td>
               </tr>
             </table>
-            <a class="catalog-item__button" href="#">Заказать</a>
+            <a class="button" href="#">Заказать</a>
           </div>
         </li>
         <li class="catalog-item">
@@ -177,19 +177,19 @@
           <div class="catalog-item__card-wrapper">
             <table class="catalog-item__card-table">
               <tr class="catalog-item__card-row">
-                <td class="name">Масса</td>
-                <td class="value">500 г</td>
+                <td class="catalog-style name">Масса</td>
+                <td class="catalog-style value">500 г</td>
               </tr>
               <tr class="catalog-item__card-row">
-                <td class="name">Вкус</td>
-                <td class="value">Рыба</td>
+                <td class="catalog-style name">Вкус</td>
+                <td class="catalog-style value">Рыба</td>
               </tr>
               <tr class="catalog-item__card-row">
-                <td class="name">Цена</td>
-                <td class="value">700 ₽</td>
+                <td class="catalog-style name">Цена</td>
+                <td class="catalog-style value">700 ₽</td>
               </tr>
             </table>
-            <a class="catalog-item__button" href="#">Заказать</a>
+            <a class="button" href="#">Заказать</a>
           </div>
         </li>
         <li class="catalog-item">
@@ -210,19 +210,19 @@
           <div class="catalog-item__card-wrapper">
             <table class="catalog-item__card-table">
               <tr class="catalog-item__card-row">
-                <td class="name">Масса</td>
+                <td class="catalog-style name">Масса</td>
                 <td class="value">1000 г</td>
               </tr>
               <tr class="catalog-item__card-row">
-                <td class="name">Вкус</td>
+                <td class="catalog-style name">Вкус</td>
                 <td class="value">Рыба</td>
               </tr>
               <tr class="catalog-item__card-row">
-                <td class="name">Цена</td>
-                <td class="value">1000 ₽</td>
+                <td class="catalog-style name">Цена</td>
+                <td class="catalog-style value">1000 ₽</td>
               </tr>
             </table>
-            <a class="catalog-item__button" href="#">Заказать</a>
+            <a class="button" href="#">Заказать</a>
           </div>
         </li>
         <li class="catalog-item">
@@ -243,19 +243,19 @@
           <div class="catalog-item__card-wrapper">
             <table class="catalog-item__card-table">
               <tr class="catalog-item__card-row">
-                <td class="name">Масса</td>
-                <td class="value">500 г</td>
+                <td class="catalog-style name">Масса</td>
+                <td class="catalog-style value">500 г</td>
               </tr>
               <tr class="catalog-item__card-row">
-                <td class="name">Вкус</td>
-                <td class="value">Гречка</td>
+                <td class="catalog-style name">Вкус</td>
+                <td class="catalog-style value">Гречка</td>
               </tr>
               <tr class="catalog-item__card-row">
-                <td class="name">Цена</td>
-                <td class="value">400 ₽</td>
+                <td class="catalog-style name">Цена</td>
+                <td class="catalog-style value">400 ₽</td>
               </tr>
             </table>
-            <a class="catalog-item__button" href="#">Заказать</a>
+            <a class="button" href="#">Заказать</a>
           </div>
         </li>
         <li class="catalog-item">
@@ -276,19 +276,19 @@
           <div class="catalog-item__card-wrapper">
             <table class="catalog-item__card-table">
               <tr class="catalog-item__card-row">
-                <td class="name">Масса</td>
-                <td class="value">1000 г</td>
+                <td class="catalog-style name">Масса</td>
+                <td class="catalog-style value">1000 г</td>
               </tr>
               <tr class="catalog-item__card-row">
-                <td class="name">Вкус</td>
-                <td class="value">Гречка</td>
+                <td class="catalog-style name">Вкус</td>
+                <td class="catalog-style value">Гречка</td>
               </tr>
               <tr class="catalog-item__card-row">
-                <td class="name">Цена</td>
-                <td class="value">700 ₽</td>
+                <td class="catalog-style name">Цена</td>
+                <td class="catalog-style value">700 ₽</td>
               </tr>
             </table>
-            <a class="catalog-item__button" href="#">Заказать</a>
+            <a class="button" href="#">Заказать</a>
           </div>
         </li>
         <li class="catalog-item">
@@ -309,25 +309,25 @@
           <div class="catalog-item__card-wrapper">
             <table class="catalog-item__card-table">
               <tr class="catalog-item__card-row">
-                <td class="name">Масса</td>
-                <td class="value">500 г</td>
+                <td class="catalog-style name">Масса</td>
+                <td class="catalog-style value">500 г</td>
               </tr>
               <tr class="catalog-item__card-row">
-                <td class="name">Вкус</td>
-                <td class="value">Рис</td>
+                <td class="catalog-style name">Вкус</td>
+                <td class="catalog-style value">Рис</td>
               </tr>
               <tr class="catalog-item__card-row">
-                <td class="name">Цена</td>
-                <td class="value">500 ₽</td>
+                <td class="catalog-style name">Цена</td>
+                <td class="catalog-style value">500 ₽</td>
               </tr>
             </table>
-            <a class="catalog-item__button" href="#">Заказать</a>
+            <a class="button" href="#">Заказать</a>
           </div>
         </li>
         <li class="catalog-item catalog-item--picture">
-          <h3 class="catalog-item__title">Показать еще 100500 товаров</h3>
+          <h3 class="catalog-item__title catalog-item__title--color">Показать еще 100500 товаров</h3>
           <p class="catalog-item__text">На самом деле вкусов гораздо больше!</p>
-          <a class="catalog-item_button catalog-item_button--dropdown" href="#">показать все</a>
+          <a class="button button--dropdown" href="#">показать все</a>
         </li>
       </ul>
     </section>
@@ -343,7 +343,7 @@
                 <td class="main-container__card-row-price">200 ₽</td>
               </tr>
             </table>
-            <a class="main-container__additional-products-button" href="#">Заказать</a>
+            <a class="button" href="#">Заказать</a>
           </li>
           <li class="main-container__additional-products-item">
             <table class="main-container__card-table">
@@ -353,7 +353,7 @@
                 <td class="main-container__card-row-price">50 ₽</td>
               </tr>
             </table>
-            <a class="main-container__additional-products-button" href="#">Заказать</a>
+            <a class="button" href="#">Заказать</a>
           </li>
           <li class="main-container__additional-products-item">
             <table class="main-container__card-table">
@@ -363,7 +363,7 @@
                 <td class="main-container__card-row-price">100 ₽</td>
               </tr>
             </table>
-            <a class="main-container__additional-products-button" href="#">Заказать</a>
+            <a class="button" href="#">Заказать</a>
           </li>
           <li class="main-container__additional-products-item">
             <table class="main-container__card-table">
@@ -373,7 +373,7 @@
                 <td class="main-container__card-row-price">300 ₽</td>
               </tr>
             </table>
-            <a class="main-container__additional-products-button" href="#">Заказать</a>
+            <a class="button" href="#">Заказать</a>
           </li>
         </ul>
         <div class="main-container_additional-products-bounty main-container_additional-products-bounty--photo">
