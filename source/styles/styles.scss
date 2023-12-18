@@ -1,7 +1,32 @@
 /* GLOBAL */
+@import "./global/fonts.scss";
 @import "./global/variables.scss";
 @import "./global/global.scss";
-@import "./global/fonts.scss";
+@import "./global/visually-hidden.scss";
+
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/page.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/image.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/button.scss";
+@import "./blocks/color-text.scss";
+@import "./blocks/features.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/sample.scss";
+@import "./blocks/form-details.scss";
+@import "./blocks/form-text.scss";
+@import "./blocks/form-label.scss";
+@import "./blocks/form-input.scss";
+@import "./blocks/control-input.scss";
+@import "./blocks/catalog-list.scss";
+@import "./blocks/catalog-item.scss";
+@import "./blocks/catalog-link.scss";
+@import "./blocks/catalog-style.scss";
+@import "./blocks/name.scss";
+@import "./blocks/value.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/contacts.scss";
