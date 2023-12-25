@@ -1,0 +1,18 @@
+.logo-icon {
+  min-width: 101px;
+  min-height: 18px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (max-width: $min-width-tablet) {
+    background-image: url("../../images/icons/logo-text-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 101px auto;
+  }
+}

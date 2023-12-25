@@ -1,3 +1,15 @@
 .color-text {
   color: $color-text;
 }
+
+@media (min-width: $min-width-mobile) {
+  .color-text {
+    color: $base-color-text;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .color-text {
+      color: $base-color-text;
+    }
+  }
+}
