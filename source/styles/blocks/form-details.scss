@@ -10,9 +10,11 @@
 
 // }
 
-// .form-details__filter-item-alternative {
-
-// }
+.form-details__filter-item-alternative {
+  &:disabled {
+    opacity: 0.3;
+  }
+}
 
 // .form-details_filter--email {
 

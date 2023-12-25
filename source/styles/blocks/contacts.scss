@@ -4,15 +4,55 @@
 // }
 
 .contacts--map {
-  min-width: 320px;
-  min-height: 362px;
   background-image: url("../../images/location@1x.jpg");
   background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
-// .contacts__wrapper {
+@media (min-resolution: 2dppx) {
+  .contacts--map {
+    background-image: url("../../images/location@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+}
 
-// }
+@media (min-width: $min-width-mobile) and (max-width: $min-width-tablet) {
+  .contacts--map {
+    background-image: url("../../images/map-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .contacts--map {
+      background-image: url("../../images/map-tablet@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+    }
+  }
+}
+
+@media (min-width: $min-width-tablet) {
+  .contacts--map {
+    background-image: url("../../images/location-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .contacts--map {
+      background-image: url("../../images/location-desktop@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+    }
+  }
+}
+
+.contacts__wrapper {
+  min-width: 320px;
+  min-height: 460px;
+}
 
 .contacts__subtitle {
   font-family: "Oswald", sans-serif;

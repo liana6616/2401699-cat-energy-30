@@ -12,7 +12,40 @@
 }
 
 .main-container__wrapper {
-  background-color: rgba(104, 183, 56, 0.85);
+  min-width: 320px;
+  min-height: 480px;
+}
+
+@media (max-width: $min-width-mobile) {
+  .main-container__wrapper--picture {
+    background-image: url("../../images/background-cat-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 320px 302px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .main-container__wrapper--picture {
+      background-image: url("../../images/background-cat-mobile@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+    }
+  }
+}
+
+@media (min-width: $min-width-desktop) {
+  .main-container__wrapper--picture {
+    background-image: url("../../images/background-cat-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 1040px 694px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .main-container__wrapper--picture {
+      background-image: url("../../images/background-cat-desktop@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: 1040px 694px;
+    }
+  }
 }
 
 .main-container__title-text {
@@ -89,17 +122,60 @@
 }
 
 .main-container_additional-products-bounty {
+  min-width: 280px;
+  min-height: 290px;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  background: rgba(104, 183, 56, 0.85);
   color: $color-text;
 }
 
-// .main-container_additional-products-bounty--photo {
+.main-container_additional-products-bounty--photo {
+  background-image: url("../../images/present@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
 
-// }
+@media (min-resolution: 2dppx) {
+  .main-container_additional-products-bounty--photo {
+    background-image: url("../../images/present@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+}
+
+@media (min-width: $min-width-mobile) and (max-width: $min-width-tablet) {
+  .main-container_additional-products-bounty--photo {
+    background-image: url("../../images/present-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .main-container_additional-products-bounty--photo {
+      background-image: url("../../images/present-tablet@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+    }
+  }
+}
+
+@media (min-width: $min-width-tablet) {
+  .main-container_additional-products-bounty--photo {
+    background-image: url("../../images/present-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 245px 288px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .main-container_additional-products-bounty--photo {
+      background-image: url("../../images/present-desktop@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: 245px 288px;
+    }
+  }
+}
 
 // .main-container__additional-products-bounty-text {
 

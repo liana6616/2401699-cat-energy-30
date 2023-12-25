@@ -6,9 +6,41 @@
 
 // }
 
-// .main-footer__logo {
+.main-footer__logo {
+  min-width: 128px;
+  min-height: 24px;
 
-// }
+  @media (max-width: $min-width-tablet) {
+    background-image: url("../../images/icons/logo-text-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 124px auto;
+  }
+}
+
+.main-footer__logo-academy:active {
+  opacity: 0.3;
+}
+
+.main-footer__logo-academy-link {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: #666666;
+  text-decoration: none;
+}
+
+.main-footer__icon {
+  color: #666666;
+
+  &:hover {
+    color: #68b738;
+  }
+
+  &:active {
+    color: #68b738;
+  }
+}
 
 // .main-footer__social {
 
@@ -26,34 +58,41 @@
 
 // }
 
-// .social-link-vkontakte {
+.main-footer__social-link-vkontakte {
+  color: #666666;
 
-// }
+  &:hover {
+    color: #68b738;
+  }
 
-// .main-footer_social-link {
+  &:active {
+    color: #68b738;
+    opacity: 0.3;
+  }
+}
 
-// }
+.main-footer__social-link-youtub {
+  color: #666666;
 
-// .main-footer_social-link-vkontakte {
+  &:hover {
+    color: #68b738;
+  }
 
-// }
+  &:active {
+    color: #68b738;
+    opacity: 0.3;
+  }
+}
 
-// .main-footer_social-link-youtub {
+.main-footer__social-link-telegram {
+  color: #666666;
 
-// }
+  &:hover {
+    color: #68b738;
+  }
 
-// .main-footer_social-link-telegram {
-
-// }
-
-// .main-footer__logo-academy {
-
-// }
-
-.main-footer__logo-academy-link {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  color: $base-color-text;
+  &:active {
+    color: #68b738;
+    opacity: 0.3;
+  }
 }

@@ -2,9 +2,11 @@
 
 // }
 
-// .catalog-item--picture {
-
-// }
+.catalog-item--picture {
+  background-image: url("../../images/icons/plus.svg");
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+}
 
 .catalog-item__title {
   font-family: $font-oswald;
