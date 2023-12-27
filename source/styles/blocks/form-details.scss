@@ -2,13 +2,21 @@
 
 // }
 
-// .form-details__filter {
-
-// }
+.form-details__filter {
+  @media (min-width: $min-width-desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
 // .form-details__name {
 
 // }
+
+.form-details__filter-item {
+  list-style-type: none;
+}
 
 .form-details__filter-item-alternative {
   &:disabled {
@@ -30,17 +38,22 @@
   text-transform: none;
 }
 
-// .form-email {
+.form-details__additionally-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 
-// }
+  @media (min-width: $min-width-tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-// .form-number {
-
-// }
-
-// .form-details__additionally-list {
-
-// }
+  @media (min-width: $min-width-desktop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
 // .form-details__additionally-item {
 

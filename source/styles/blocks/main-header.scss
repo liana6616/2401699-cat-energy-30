@@ -1,6 +1,11 @@
 .main-header {
   min-width: 320px;
   min-height: 65px;
+
+  @media (min-width: $min-width-tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .main-header__logo-image:hover {
