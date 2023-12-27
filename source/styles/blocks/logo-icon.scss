@@ -10,7 +10,7 @@
     opacity: 0.6;
   }
 
-  @media (max-width: $min-width-tablet) {
+  @media (max-width: 767px) {
     background-image: url("../../images/icons/logo-text-mobile.svg");
     background-repeat: no-repeat;
     background-size: 101px auto;

@@ -1,24 +1,51 @@
 .main-footer {
+  min-width: $min-width-mobile;
+  min-height: 714px;
+  margin-top: auto;
   background-color: $color-background;
 }
 
-// .main-footer__wrapper {
+.main-footer__wrapper {
+  width: 100%;
+  display: flex;
+  padding: 40px 20px;
+  flex-direction: column;
+  align-items: center;
 
-// }
+  @media (max-width: $min-width-mobile) {
+    gap: 41px;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    padding: 55px 30px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
 .main-footer__logo {
   min-width: 128px;
   min-height: 24px;
-
-  @media (max-width: $min-width-tablet) {
-    background-image: url("../../images/icons/logo-text-mobile.svg");
-    background-repeat: no-repeat;
-    background-size: 124px auto;
-  }
+  background-image: url("../../images/icons/logo-text-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 124px auto;
 }
 
-.main-footer__logo-academy:active {
-  opacity: 0.3;
+.main-footer__logo-academy {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    width: 168px;
+  }
 }
 
 .main-footer__logo-academy-link {
@@ -42,13 +69,18 @@
   }
 }
 
-// .main-footer__social {
+.main-footer__social {
+  padding: 30px 120px 30px 160px;
+}
 
-// }
-
-// .main-footer__social-list {
-
-// }
+.main-footer__social-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+}
 
 // .main-footer__social-item {
 

@@ -1,4 +1,9 @@
 .button {
+  min-width: 280px;
+  padding: 10px 44px;
+  margin: 0 20px 20px 20px;
+  display: flex;
+  justify-content: center;
   font-family: $font-oswald;
   font-size: 16px;
   font-style: normal;

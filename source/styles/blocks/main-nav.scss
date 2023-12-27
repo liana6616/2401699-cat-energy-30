@@ -2,14 +2,26 @@
 
 // }
 
-// .main-nav__toogle {
+.main-nav__toogle {
+  width: 24px;
+  height: 2px;
+  background-color: $base-color-text;
 
-// }
+  @media (min-width: $min-width-tablet) {
+    display: none;
+  }
+}
 
-// .main-nav__wrapper {
+.main-nav__wrapper {
+  min-width: 436px;
+}
 
-// }
+.main-nav__list {
+  padding: 0;
+  margin: 0;
 
-// .main-nav__list {
-
-// }
+  @media (min-width: $min-width-tablet) {
+    display: flex;
+    gap: 33px;
+  }
+}
