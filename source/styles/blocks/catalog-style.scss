@@ -3,4 +3,15 @@
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
+
+  @media (min-width: $min-width-tablet) {
+    & {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
+
+.catalog-style--name {
+  padding: 0;
 }

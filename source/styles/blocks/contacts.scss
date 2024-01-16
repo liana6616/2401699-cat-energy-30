@@ -1,15 +1,12 @@
 .contacts {
-  width: 320px;
+  width: 100%;
   height: 362px;
   position: relative;
-
-  @media (min-width: $min-width-tablet) {
-    width: 100%;
-  }
 }
 
 .contacts__map {
-  width: 320px;
+  position: relative;
+  min-width: $min-width-mobile;
   min-height: 362px;
   background-image: url("../../images/location@1x.jpg");
   background-repeat: no-repeat;
@@ -20,35 +17,49 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
   }
-}
 
-@media (min-width: $min-width-tablet) {
-  .contacts__map {
-    width: 100%;
-    min-height: 400px;
-    background-image: url("../../images/map-tablet@1x.jpg");
+  &::after {
+    position: absolute;
+    content: "";
+    top: 138px;
+    right: 129px;
+    bottom: 0;
+    width: 57px;
+    height: 53px;
+    background-image: url("../../images/map-stik@1x.png");
     background-repeat: no-repeat;
-    background-size: 100% auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/map-stik@2x.png");
+      background-repeat: no-repeat;
+    }
   }
 
-  @media (min-resolution: 2dppx) {
-    .contacts__map {
+  @media (min-width: $min-width-tablet) {
+    & {
+      min-width: $min-width-tablet;
+      min-height: 400px;
+      background-image: url("../../images/map-tablet@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+    }
+
+    @media (min-resolution: 2dppx) {
       background-image: url("../../images/map-tablet@2x.jpg");
       background-repeat: no-repeat;
       background-size: 100% auto;
     }
   }
-}
 
-@media (min-width: $min-width-desktop) {
-  .contacts__map {
-    background-image: url("../../images/location-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-  }
+  @media (min-width: $min-width-desktop) {
+    & {
+      min-width: $min-width-desktop;
+      background-image: url("../../images/location-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+    }
 
-  @media (min-resolution: 2dppx) {
-    .contacts__map {
+    @media (min-resolution: 2dppx) {
       background-image: url("../../images/location-desktop@2x.jpg");
       background-repeat: no-repeat;
       background-size: 100% auto;
@@ -56,28 +67,53 @@
   }
 }
 
+.contacts__map iframe {
+  min-width: 100%;
+  border: none;
+  display: block;
+
+  @media (min-width: $min-width-tablet) {
+    height: 400px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    height: 400px;
+  }
+}
+
 .contacts__wrapper {
   min-width: 320px;
   min-height: 112px;
-  padding: 26px 20px;
+  padding: 26px 20px 27px 20px;
   display: flex;
   justify-content: space-between;
   background-color: $color-text;
 
   @media (min-width: $min-width-tablet) {
-    display: flex;
-    justify-content: space-between;
-    background-color: $color-background;
+    & {
+      min-width: $min-width-tablet;
+      padding: 62px 70px 59px 70px;
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   @media (min-width: $min-width-desktop) {
-    position: absolute;
-    content: "";
+    & {
+      max-width: $min-width-desktop;
+      z-index: 1;
+      position: absolute;
+      min-width: 565px;
+      padding: 58px 79px;
+      margin: 97px 0 0 111px;
+      background-color: $color-text;
+    }
   }
 }
 
 .contacts__subtitle {
-  padding: 0 20px;
+  min-width: 140px;
+  padding: 0;
   margin: 0;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -88,7 +124,14 @@
   text-transform: uppercase;
 
   @media (min-width: $min-width-tablet) {
-    max-width: 163px;
+    & {
+      max-width: 163px;
+      padding: 0;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+    }
   }
 }
 
@@ -99,10 +142,18 @@
   line-height: 20px;
 
   @media (min-width: $min-width-tablet) {
-    max-width: 157px;
+    & {
+      max-width: 157px;
+      display: flex;
+      flex-direction: column;
+      gap: 19px;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: end;
+    }
+  }
+
+  @media (min-width: $min-width-desktop) {
+    text-align: start;
   }
 }
-
-// .contacts__text {
-
-// }

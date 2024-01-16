@@ -1,36 +1,107 @@
 .main-footer {
-  min-width: $min-width-mobile;
+  width: 100%;
   min-height: 714px;
   margin-top: auto;
   background-color: $color-background;
+
+  @media (min-width: $min-width-tablet) {
+    & {
+      min-height: 747px;
+    }
+  }
+
+  @media (min-width: $min-width-desktop) {
+    & {
+      min-height: 569px;
+    }
+  }
 }
 
 .main-footer__wrapper {
-  width: 100%;
+  position: relative;
+  min-width: 280px;
   display: flex;
-  padding: 40px 20px;
+  padding: 40px 0;
+  margin: 0 20px;
   flex-direction: column;
   align-items: center;
+  gap: 35px;
 
-  @media (max-width: $min-width-mobile) {
-    gap: 41px;
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 98px;
+    left: 0;
+    min-width: 100%;
+    height: 1px;
+    background: #d9d9d9;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 82px;
+    left: 0;
+    min-width: 100%;
+    height: 1px;
+    background: #d9d9d9;
   }
 
   @media (min-width: $min-width-tablet) {
-    padding: 55px 30px;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    & {
+      min-width: $min-width-tablet;
+      padding: 33px 29px;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 0;
+    }
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: $min-width-desktop) {
+    & {
+      min-width: $min-width-desktop;
+      padding: 68px 110px;
+    }
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      display: none;
+    }
   }
 }
 
 .main-footer__logo {
   min-width: 128px;
   min-height: 24px;
+  margin: -1px 0 1px 0;
   background-image: url("../../images/icons/logo-text-mobile.svg");
   background-repeat: no-repeat;
-  background-size: 124px auto;
+  background-size: 128px 24px;
+
+  @media (min-width: $min-width-tablet) {
+    & {
+      margin: 0;
+    }
+  }
+
+  @media (min-width: $min-width-desktop) {
+    & {
+      margin-right: 33px;
+    }
+  }
 }
 
 .main-footer__logo-academy {
@@ -44,7 +115,15 @@
   }
 
   @media (min-width: $min-width-tablet) {
-    width: 168px;
+    & {
+      width: 168px;
+    }
+  }
+
+  @media (min-width: $min-width-tablet) {
+    & {
+      width: 162px;
+    }
   }
 }
 
@@ -58,6 +137,7 @@
 }
 
 .main-footer__icon {
+  margin-top: 1px;
   color: #666666;
 
   &:hover {
@@ -67,10 +147,26 @@
   &:active {
     color: #68b738;
   }
+
+  @media (min-width: $min-width-desktop) {
+    & {
+      margin-top: -1px;
+    }
+  }
 }
 
 .main-footer__social {
-  padding: 30px 120px 30px 160px;
+  @media (min-width: $min-width-tablet) {
+    & {
+      padding: 30px 125px 30px 160px;
+    }
+  }
+
+  @media (min-width: $min-width-desktop) {
+    & {
+      padding: 0;
+    }
+  }
 }
 
 .main-footer__social-list {
@@ -78,17 +174,13 @@
   margin: 0;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 24px;
   list-style-type: none;
+
+  @media (min-width: $min-width-tablet) {
+    gap: 24px;
+  }
 }
-
-// .main-footer__social-item {
-
-// }
-
-// .main-footer__social-link {
-
-// }
 
 .main-footer__social-link-vkontakte {
   color: #666666;

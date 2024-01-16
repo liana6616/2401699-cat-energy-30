@@ -1,13 +1,23 @@
 .catalog-list {
+  padding: 0;
+  margin: 0;
   list-style-type: none;
 
   @media (min-width: $min-width-tablet) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    & {
+      padding: 0 30px 70px 30px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 141px 60px;
+    }
   }
 
   @media (min-width: $min-width-desktop) {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    & {
+      padding: 0 110px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 143px 77px;
+    }
   }
 }

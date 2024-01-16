@@ -2,7 +2,7 @@
   color: $color-text;
 }
 
-@media (min-width: $min-width-mobile) {
+@media (min-width: $min-width-tablet) {
   .color-text {
     color: $base-color-text;
   }

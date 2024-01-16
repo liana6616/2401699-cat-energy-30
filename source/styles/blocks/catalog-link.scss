@@ -1,3 +1,36 @@
-// .catalog-link {
+.catalog-link {
+  height: 110%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-// }
+  @media (min-width: $min-width-tablet) {
+    & {
+      position: absolute;
+      top: -53px;
+      min-width: 265px;
+      margin: 0;
+      align-items: flex-start;
+    }
+  }
+
+  @media (min-width: $min-width-desktop) {
+    & {
+      top: -50px;
+    }
+  }
+}
+
+.catalog-link--position {
+  @media (min-width: $min-width-tablet) {
+    & {
+      top: -69px;
+    }
+  }
+
+  @media (min-width: $min-width-desktop) {
+    & {
+      top: -64px;
+    }
+  }
+}

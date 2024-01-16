@@ -1,10 +1,19 @@
 .main-header {
-  min-width: 320px;
+  width: 100%;
   min-height: 65px;
+  padding: 13px 20px 10px 20px;
+  margin: 0 auto;
 
   @media (min-width: $min-width-tablet) {
+    padding: 25px 30px 0 30px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    position: relative;
+    padding: 55px 110px 40px 110px;
   }
 }
 

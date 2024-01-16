@@ -1,49 +1,130 @@
 .features {
+  position: relative;
   min-width: 280px;
-  padding: 0;
-  margin: 0 20px;
+  padding: 16px 20px 0 21px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 
+  @media (min-width: $min-width-tablet) {
+    max-width: $min-width-tablet;
+    padding: 0 30px;
+    margin: 0 auto;
+    gap: 30px;
+  }
+
   @media (min-width: $min-width-desktop) {
+    min-width: $min-width-desktop;
+    padding: 0 110px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
+    gap: 80px;
   }
 }
 
 .features__wrapper {
-  padding: 21px 33px 22px 20px;
+  max-width: 280px;
+  padding: 30px 30px 26px 19px;
   margin: 0;
   background-color: $color-background;
+  z-index: -1;
+
+  @media (min-width: $min-width-tablet) {
+    & {
+      max-width: 708px;
+      padding: 77px 320px 57px 52px;
+    }
+  }
+
+  @media (min-width: $min-width-desktop) {
+    & {
+      position: relative;
+      min-width: 570px;
+      padding: 77px 61px 35px 52px;
+    }
+  }
 }
 
 .features__list {
+  position: relative;
   padding: 0;
   margin: 0;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: -22px;
+    left: 0;
+    min-width: 240px;
+    height: 1px;
+    background: #d9d9d9;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: $min-width-desktop) {
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .features_item {
   list-style-type: none;
 }
 
-.features_item--slim {
-  background-image: url("../../images/icons/cat-slim.svg");
+.features__wrapper--slim {
+  background-image: url("../../images/icons/cat-slim.svg"), url("../../images/icons/radiobutton.svg");
   background-repeat: no-repeat;
   background-size: 50px 50px;
+  background-position: 19px 21px;
+
+  @media (min-width: $min-width-tablet) {
+    & {
+      background-position: 425px 80px;
+      background-size: 240px 195px;
+    }
+  }
+
+  @media (min-width: $min-width-desktop) {
+    & {
+      background-position: 52px 42px;
+      background-size: 100px 100px;
+    }
+  }
 }
 
-.features_item--weight {
-  background-image: url("../../images/icons/cat-weight.svg");
+.features__wrapper--weight {
+  background-image: url("../../images/icons/cat-weight.svg"), url("../../images/icons/radiobutton.svg");
   background-repeat: no-repeat;
-  background-size: 67px 50px;
+  background-size: 69px 50px;
+  background-position: 10px 23px;
+
+  @media (min-width: $min-width-tablet) {
+    & {
+      background-position: 411px 90px;
+      background-size: 268px 200px;
+    }
+  }
+
+  @media (min-width: $min-width-desktop) {
+    & {
+      background-position: 36px 44px;
+      background-size: 133px 101px;
+    }
+  }
 }
 
 .features__title {
   padding: 0;
   margin: 0;
-  margin-left: 90px;
+  margin-left: 70px;
   font-family: $font-oswald;
   font-size: 24px;
   font-style: normal;
@@ -51,31 +132,161 @@
   line-height: 37px;
   text-transform: uppercase;
   color: $base-color-text;
+
+  @media (min-width: $min-width-tablet) {
+    & {
+      padding: 0;
+      margin: 0 0 0 1px;
+      font-size: 36px;
+      line-height: 36px;
+    }
+  }
+
+  @media (min-width: $min-width-desktop) {
+    & {
+      padding: 0;
+      margin: 0 0 71px 162px;
+    }
+  }
 }
 
 .features__advantages-discription {
   min-width: 227px;
   padding: 0;
-  margin-top: 42px;
+  margin: 28px 0 39px 0;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
   color: $base-color-text;
+
+  @media (min-width: $min-width-tablet) {
+    & {
+      max-width: 335px;
+      margin: 24px 0 52px 0;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  @media (min-width: $min-width-desktop) {
+    & {
+      max-width: 457px;
+    }
+  }
 }
 
-.features_advantages-link {
+.features__advantages-link {
+  position: relative;
+  top: 3px;
+  width: 130px;
+  display: block;
   font-family: $font-oswald;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
-  color: #000000;
+  color: $base-color-text;
   text-transform: uppercase;
+  text-decoration: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 2px;
+    right: 0;
+    width: 11px;
+    height: 12px;
+    background-image: url("../../images/icons/arrow.svg");
+    background-repeat: no-repeat;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 7px;
+    right: 5px;
+    width: 23px;
+    height: 2px;
+    background-color: $base-color-text;
+  }
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:hover::after {
+    width: 7px;
+    right: 0;
+    left: 123px;
+    opacity: 0.8;
+  }
+
+  &:hover::before {
+    width: 25px;
+    right: 0;
+    left: 101px;
+    opacity: 0.8;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    & {
+      min-width: 160px;
+      top: 0;
+      font-size: 20px;
+      line-height: normal;
+    }
+
+    &::before {
+      top: 14px;
+      right: 4px;
+    }
+
+    &::after {
+      top: 8px;
+    }
+  }
+
+  @media (min-width: $min-width-desktop) {
+    & {
+      top: -23px;
+      font-size: 20px;
+      line-height: normal;
+    }
+
+    &::after {
+      top: 9px;
+      right: -1px;
+    }
+  }
 }
 
-.features_advantages-link--all {
-  background-image: url("../../images/icons/arrow.svg");
-  background-repeat: no-repeat;
-  background-size: 32px 10px;
+.features__advantages-link--all {
+  width: 126px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 2px;
+    right: 0;
+    width: 11px;
+    height: 12px;
+    background-image: url("../../images/icons/arrow.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover::after {
+    width: 7px;
+    left: 120px;
+    opacity: 0.8;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    min-width: 155px;
+
+    &::after {
+      top: 8px;
+      right: -2px;
+    }
+  }
 }
