@@ -54,8 +54,21 @@
   margin: 0;
   margin-top: auto;
   background-color: $color-background;
-  color: #444444;
+  color: $addition-color-text;
   text-align: center;
+
+  &:hover {
+    background-color: $button-color-variable;
+  }
+
+  &:focus {
+    background-color: $button-color-variable;
+  }
+
+  &:active {
+    background-color: $button-color-variable;
+    color: $addition-color-text;
+  }
 
   @media (min-width: $min-width-tablet) {
     & {

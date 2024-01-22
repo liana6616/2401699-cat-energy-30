@@ -1,10 +1,11 @@
 .sample {
   width: 100%;
   min-height: 659px;
-  background-color: #eaeaea;
+  background-color: $rectangle-color;
   position: relative;
 
   @media (min-width: $min-width-tablet) {
+    position: relative;
     min-height: 1081px;
     background: none;
 
@@ -15,7 +16,17 @@
       right: 0;
       width: 100%;
       height: 462px;
-      background-color: #eaeaea;
+      background-color: $rectangle-color;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: $button-color-variable;
     }
   }
 
@@ -25,6 +36,10 @@
     flex-direction: column;
 
     &::after {
+      display: none;
+    }
+
+    &::before {
       display: none;
     }
   }
@@ -68,8 +83,6 @@
     padding: 46px 30px 0 30px;
     margin-bottom: 15px;
     font-size: 60px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 60px;
   }
 
@@ -77,10 +90,6 @@
     max-width: $min-width-desktop;
     padding: 28px 110px 0 110px;
     margin: 0 auto 77px 0;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 60px;
   }
 }
 
@@ -91,7 +100,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
-  color: #444444;
+  color: $addition-color-text;
 
   @media (min-width: $min-width-tablet) {
     padding: 0;
@@ -190,7 +199,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
-  color: #444444;
+  color: $addition-color-text;
   text-align: center;
 
   @media (min-width: $min-width-tablet) {
@@ -261,17 +270,43 @@
 }
 
 .sample__photo-1 {
+  z-index: 2;
   position: relative;
   width: 50%;
+  height: 100%;
   overflow: hidden;
-  z-index: 2;
+
+  &::before {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 50%;
+    top: 0;
+    right: 50%;
+    background-color: $rectangle-color;
+  }
 
   @media (min-width: $min-width-tablet) {
     width: 40%;
+
+    &::before {
+      width: 62%;
+      top: 250px;
+      left: 38%;
+    }
   }
 
   @media (min-width: $min-width-desktop) {
+    position: absolute;
     width: 50%;
+
+    &::before {
+      width: 62%;
+      top: 250px;
+      left: 38%;
+      background-color: $color-background;
+    }
   }
 }
 
@@ -288,7 +323,7 @@
     height: 100%;
     top: 0;
     right: 50%;
-    background-color: #eaeaea;
+    background-color: $rectangle-color;
     z-index: 0;
   }
 
@@ -299,8 +334,8 @@
     top: 19px;
 
     &::after {
-      min-height: 512px;
-      background-color: inherit;
+      height: 150px;
+      background-color: $color-text;
     }
   }
 
@@ -310,6 +345,7 @@
     left: 0;
 
     &::after {
+      height: 120px;
       right: 32%;
     }
   }

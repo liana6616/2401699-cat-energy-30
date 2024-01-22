@@ -5,10 +5,8 @@
   line-height: 16px;
 
   @media (min-width: $min-width-tablet) {
-    & {
-      font-size: 16px;
-      line-height: 20px;
-    }
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 

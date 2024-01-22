@@ -12,10 +12,10 @@
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
-<body class="page__body">
+<body>
   <header class="main-header">
     <div class="main-header__logo logo-icon">
-      <a class="main-header__logo-image" href="#">
+      <a class="main-header__logo-image" href="index.html">
         <picture>
           <source srcset="images/icons/logo-desktop.svg" media="(min-width: 1440px)" type="image/svg+xml" width="202"
             height="59">
@@ -27,7 +27,7 @@
       </a>
     </div>
     <nav class="main-nav main-nav--closed">
-      <button class="main-nav__toggle main-nav__toggle--line" type="button">
+      <button class="main-nav__toggle main-nav__toggle-line" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
@@ -51,10 +51,12 @@
       </div>
     </nav>
   </header>
-  <main class="main-container main-container--form main-container--margin">
-    <h1 class="main-container__title main-container__title--form">Подбор программы</h1>
-    <p class="main-container__text main-container__text--form">Заполните анкету, и мы подберем программу питания для
-      вашего кота</p>
+  <main class="main-container main-container--form">
+    <div class="main-container__margin">
+      <h1 class="main-container__title main-container__title--form">Подбор программы</h1>
+      <p class="main-container__text main-container__text--form">Заполните анкету, и мы подберем программу питания для
+        вашего кота</p>
+    </div>
     <form class="form-details" action="#" method="post">
       <fieldset class="form-details__filter">
         <legend class="visually-hidden">Данные кота</legend>
@@ -64,11 +66,11 @@
             <input class="form-text form-text--input" id="name" type="text" name="monicker" placeholder="БАРСИК"
               required>
           </p>
-          <p class="form-details__weight">
+          <p class="form-details__name">
             <label class="form-text form-text--label" for="weight">Вес (кг):*</label>
             <input class="form-text form-text--input" id="weight" type="number" name="kg" placeholder="7" required>
           </p>
-          <p class="form-details__age">
+          <p class="form-details__name">
             <label class="form-text form-text--label-age" for="age">Возраст (лет):</label>
             <input class="form-text form-text--input" id="age" type="number" name="years" placeholder="7">
           </p>
@@ -216,7 +218,7 @@
       </div>
     </section>
   </footer>
-  <script src="../source/scripts/index.js"></script>
+  <script src="../scripts/index.js"></script>
 </body>
 
 </html>

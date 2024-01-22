@@ -6,10 +6,8 @@
   appearance: none;
 
   @media (min-width: $min-width-tablet) {
-    & {
-      width: 40px;
-      height: 40px;
-    }
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -17,16 +15,14 @@
   display: block;
   width: 29px;
   height: 30px;
-  border: 1px solid #cdcdcd;
-  background: #ffffff;
+  border: 1px solid $background;
+  background: $color-text;
 
   @media (min-width: $min-width-tablet) {
-    & {
-      width: 40px;
-      height: 40px;
-      position: relative;
-      bottom: 43px;
-    }
+    width: 40px;
+    height: 40px;
+    position: relative;
+    bottom: 43px;
   }
 }
 
@@ -38,12 +34,10 @@
   color: $base-color-background;
 
   @media (min-width: $min-width-tablet) {
-    & {
-      background-size: 23px auto;
-      position: relative;
-      bottom: 43px;
-      margin-right: 272px;
-    }
+    background-size: 23px auto;
+    position: relative;
+    bottom: 43px;
+    margin-right: 272px;
   }
 }
 
@@ -54,15 +48,13 @@
   width: 30px;
   height: 30px;
   border-radius: 20px;
-  border: 1px solid #cdcdcd;
-  background: #ffffff;
+  border: 1px solid $background;
+  background: $color-text;
 
   @media (min-width: $min-width-tablet) {
-    & {
-      bottom: 44px;
-      width: 40px;
-      height: 40px;
-    }
+    bottom: 44px;
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -74,8 +66,6 @@
   color: $base-color-background;
 
   @media (min-width: $min-width-tablet) {
-    & {
-      background-size: 18px;
-    }
+    background-size: 18px;
   }
 }

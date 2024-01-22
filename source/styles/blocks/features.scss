@@ -17,8 +17,6 @@
   @media (min-width: $min-width-desktop) {
     min-width: $min-width-desktop;
     padding: 0 110px;
-    margin: 0 auto;
-    display: flex;
     flex-direction: row;
     gap: 80px;
   }
@@ -32,18 +30,14 @@
   z-index: -1;
 
   @media (min-width: $min-width-tablet) {
-    & {
-      max-width: 708px;
-      padding: 77px 320px 57px 52px;
-    }
+    max-width: 708px;
+    padding: 77px 320px 57px 52px;
   }
 
   @media (min-width: $min-width-desktop) {
-    & {
-      position: relative;
-      min-width: 570px;
-      padding: 77px 61px 35px 52px;
-    }
+    position: relative;
+    min-width: 570px;
+    padding: 77px 61px 35px 52px;
   }
 }
 
@@ -67,12 +61,6 @@
       display: none;
     }
   }
-
-  @media (min-width: $min-width-desktop) {
-    &::before {
-      display: none;
-    }
-  }
 }
 
 .features_item {
@@ -86,17 +74,13 @@
   background-position: 19px 21px;
 
   @media (min-width: $min-width-tablet) {
-    & {
-      background-position: 425px 80px;
-      background-size: 240px 195px;
-    }
+    background-position: 425px 80px;
+    background-size: 240px 195px;
   }
 
   @media (min-width: $min-width-desktop) {
-    & {
-      background-position: 52px 42px;
-      background-size: 100px 100px;
-    }
+    background-position: 52px 42px;
+    background-size: 100px 106px;
   }
 }
 
@@ -107,17 +91,13 @@
   background-position: 10px 23px;
 
   @media (min-width: $min-width-tablet) {
-    & {
-      background-position: 411px 90px;
-      background-size: 268px 200px;
-    }
+    background-position: 411px 90px;
+    background-size: 268px 200px;
   }
 
   @media (min-width: $min-width-desktop) {
-    & {
-      background-position: 36px 44px;
-      background-size: 133px 101px;
-    }
+    background-position: 36px 44px;
+    background-size: 133px 101px;
   }
 }
 
@@ -134,19 +114,13 @@
   color: $base-color-text;
 
   @media (min-width: $min-width-tablet) {
-    & {
-      padding: 0;
-      margin: 0 0 0 1px;
-      font-size: 36px;
-      line-height: 36px;
-    }
+    margin: 0 0 0 1px;
+    font-size: 36px;
+    line-height: 36px;
   }
 
   @media (min-width: $min-width-desktop) {
-    & {
-      padding: 0;
-      margin: 0 0 71px 162px;
-    }
+    margin: 0 0 71px 162px;
   }
 }
 
@@ -161,25 +135,21 @@
   color: $base-color-text;
 
   @media (min-width: $min-width-tablet) {
-    & {
-      max-width: 335px;
-      margin: 24px 0 52px 0;
-      font-size: 16px;
-      line-height: 24px;
-    }
+    max-width: 335px;
+    margin: 24px 0 52px 0;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @media (min-width: $min-width-desktop) {
-    & {
-      max-width: 457px;
-    }
+    max-width: 457px;
   }
 }
 
 .features__advantages-link {
   position: relative;
   top: 3px;
-  width: 130px;
+  width: 134px;
   display: block;
   font-family: $font-oswald;
   font-size: 16px;
@@ -195,20 +165,10 @@
     content: "";
     top: 2px;
     right: 0;
-    width: 11px;
-    height: 12px;
-    background-image: url("../../images/icons/arrow.svg");
+    width: 32px;
+    height: 20px;
+    background-image: url("../../images/icons/icon_arrow.svg");
     background-repeat: no-repeat;
-  }
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 7px;
-    right: 5px;
-    width: 23px;
-    height: 2px;
-    background-color: $base-color-text;
   }
 
   &:hover {
@@ -216,45 +176,40 @@
   }
 
   &:hover::after {
-    width: 7px;
+    position: absolute;
+    content: "";
+    top: 2px;
     right: 0;
-    left: 123px;
-    opacity: 0.8;
-  }
-
-  &:hover::before {
-    width: 25px;
-    right: 0;
-    left: 101px;
+    width: 32px;
+    height: 10px;
+    background-image: url("../../images/icons/icon_arrows.svg");
+    background-repeat: no-repeat;
     opacity: 0.8;
   }
 
   @media (min-width: $min-width-tablet) {
-    & {
-      min-width: 160px;
-      top: 0;
-      font-size: 20px;
-      line-height: normal;
-    }
-
-    &::before {
-      top: 14px;
-      right: 4px;
-    }
+    min-width: 160px;
+    top: 0;
+    font-size: 20px;
+    line-height: normal;
 
     &::after {
-      top: 8px;
+      top: 14px;
+      right: 4px;
     }
   }
 
   @media (min-width: $min-width-desktop) {
-    & {
-      top: -23px;
-      font-size: 20px;
-      line-height: normal;
-    }
+    top: -23px;
+    font-size: 20px;
+    line-height: normal;
 
     &::after {
+      top: 9px;
+      right: -1px;
+    }
+
+    &:hover::after {
       top: 9px;
       right: -1px;
     }
@@ -262,22 +217,28 @@
 }
 
 .features__advantages-link--all {
-  width: 126px;
+  width: 130px;
 
   &::after {
     position: absolute;
     content: "";
     top: 2px;
     right: 0;
-    width: 11px;
-    height: 12px;
-    background-image: url("../../images/icons/arrow.svg");
+    width: 32px;
+    height: 20px;
+    background-image: url("../../images/icons/icon_arrow.svg");
     background-repeat: no-repeat;
   }
 
   &:hover::after {
-    width: 7px;
-    left: 120px;
+    position: absolute;
+    content: "";
+    top: 2px;
+    right: 0;
+    width: 32px;
+    height: 10px;
+    background-image: url("../../images/icons/icon_arrow.svg");
+    background-repeat: no-repeat;
     opacity: 0.8;
   }
 

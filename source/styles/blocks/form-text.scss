@@ -4,7 +4,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
-  color: #444444;
+  color: $addition-color-text;
   text-transform: uppercase;
 
   &:hover {
@@ -12,20 +12,16 @@
   }
 
   @media (min-width: $min-width-tablet) {
-    & {
-      font-size: 20px;
-      line-height: normal;
-    }
+    font-size: 20px;
+    line-height: normal;
   }
 }
 
 .form-text--width {
   @media (min-width: $min-width-tablet) {
-    & {
-      position: relative;
-      bottom: 79px;
-      left: 59px;
-    }
+    position: relative;
+    bottom: 79px;
+    left: 59px;
   }
 }
 
@@ -33,13 +29,23 @@
   position: relative;
   bottom: 57px;
   left: 44px;
+  color: $base-color-text;
+
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 
   @media (min-width: $min-width-tablet) {
-    & {
-      position: relative;
-      bottom: 79px;
-      left: 59px;
-    }
+    bottom: 79px;
+    left: 59px;
   }
 }
 
@@ -50,17 +56,19 @@
   border: none;
 
   &:hover {
-    outline: 1px solid #cdcdcd;
+    outline: 1px solid $background;
   }
 
   &:focus {
-    outline: 2px solid #444444;
+    outline: 2px solid $addition-color-text;
+  }
+
+  &:invalid:required {
+    outline: 2px solid #ff8282;
   }
 
   @media (min-width: $min-width-tablet) {
-    & {
-      padding: 12px 49px 12px 20px;
-    }
+    padding: 12px 49px 12px 20px;
   }
 }
 
@@ -68,9 +76,7 @@
   min-width: 60px;
 
   @media (min-width: $min-width-tablet) {
-    & {
-      min-width: 75px;
-    }
+    min-width: 75px;
   }
 }
 
@@ -78,9 +84,7 @@
   min-width: 94px;
 
   @media (min-width: $min-width-tablet) {
-    & {
-      min-width: 117px;
-    }
+    min-width: 117px;
   }
 }
 
@@ -90,27 +94,28 @@
   background-repeat: no-repeat;
   background-position: right 10px top 12px;
 
-  &:hover {
-    color: $base-color-background;
+  // &:hover {
+  //   color: $base-color-background;
+  // }
+
+  &:invalid:required {
+    stroke: #ff8282;
   }
 
   @media (min-width: $min-width-tablet) {
-    & {
-      min-width: 551px;
-      background-position: right 13px top 17px;
-    }
+    min-width: 551px;
+    background-position: right 13px top 17px;
   }
 
   @media (min-width: $min-width-desktop) {
-    & {
-      min-width: 494px;
-      background-position: right 13px top 17px;
+    min-width: 494px;
+    background-position: right 13px top 17px;
+    stroke-linejoin: $base-color-background;
 
-      &:hover path {
-        fill: $base-color-background;
-        opacity: 0.4;
-      }
-    }
+    // &:hover {
+    //   stroke-linecap: $base-color-background;
+    //   opacity: 0.4;
+    // }
   }
 }
 
@@ -122,38 +127,29 @@
   background-position: right 11px top 13px;
 
   @media (min-width: $min-width-tablet) {
-    & {
-      margin: 0;
-      background-position: right 13px top 17px;
-    }
+    background-position: right 13px top 17px;
   }
 
   @media (min-width: $min-width-desktop) {
-    & {
-      min-width: 472px;
-    }
+    min-width: 472px;
   }
 }
 
 .form-text--indent {
-  min-width: 280px;
+  width: 280px;
   padding: 14px 14px 98px 13px;
   margin: 38px 0 20px 0;
 
   @media (min-width: $min-width-tablet) {
-    & {
-      min-width: 630px;
-      padding: 10px 295px 100px 19px;
-      margin: 87px 0 0 0;
-    }
+    width: 628px;
+    padding: 10px 294px 103px 19px;
+    margin: 87px 0 0 0;
   }
 
   @media (min-width: $min-width-desktop) {
-    & {
-      width: 100%;
-      padding-bottom: 105px;
-      margin: 75px 0 0 0;
-    }
+    width: 1220px;
+    padding-bottom: 105px;
+    margin: 75px 0 0 0;
   }
 }
 
@@ -161,12 +157,10 @@
   position: relative;
   bottom: 24px;
   left: 44px;
+  color: $base-color-text;
 
   @media (min-width: $min-width-tablet) {
-    & {
-      position: relative;
-      bottom: 78px;
-      left: 60px;
-    }
+    bottom: 78px;
+    left: 60px;
   }
 }

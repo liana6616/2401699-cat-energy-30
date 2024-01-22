@@ -36,13 +36,11 @@
   }
 
   @media (min-width: $min-width-tablet) {
-    & {
-      min-width: $min-width-tablet;
-      min-height: 400px;
-      background-image: url("../../images/map-tablet@1x.jpg");
-      background-repeat: no-repeat;
-      background-size: 100% auto;
-    }
+    min-width: $min-width-tablet;
+    min-height: 400px;
+    background-image: url("../../images/map-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/map-tablet@2x.jpg");
@@ -52,12 +50,10 @@
   }
 
   @media (min-width: $min-width-desktop) {
-    & {
-      min-width: $min-width-desktop;
-      background-image: url("../../images/location-desktop@1x.jpg");
-      background-repeat: no-repeat;
-      background-size: 100% auto;
-    }
+    min-width: $min-width-desktop;
+    background-image: url("../../images/location-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/location-desktop@2x.jpg");
@@ -75,10 +71,6 @@
   @media (min-width: $min-width-tablet) {
     height: 400px;
   }
-
-  @media (min-width: $min-width-desktop) {
-    height: 400px;
-  }
 }
 
 .contacts__wrapper {
@@ -90,24 +82,20 @@
   background-color: $color-text;
 
   @media (min-width: $min-width-tablet) {
-    & {
-      min-width: $min-width-tablet;
-      padding: 62px 70px 59px 70px;
-      display: flex;
-      justify-content: space-between;
-    }
+    min-width: $min-width-tablet;
+    padding: 62px 70px 59px 70px;
+    display: flex;
+    justify-content: space-between;
   }
 
   @media (min-width: $min-width-desktop) {
-    & {
-      max-width: $min-width-desktop;
-      z-index: 1;
-      position: absolute;
-      min-width: 565px;
-      padding: 58px 79px;
-      margin: 97px 0 0 111px;
-      background-color: $color-text;
-    }
+    max-width: $min-width-desktop;
+    z-index: 1;
+    position: absolute;
+    min-width: 565px;
+    padding: 58px 79px;
+    margin: 97px 0 0 111px;
+    background-color: $color-text;
   }
 }
 
@@ -124,14 +112,9 @@
   text-transform: uppercase;
 
   @media (min-width: $min-width-tablet) {
-    & {
-      max-width: 163px;
-      padding: 0;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 26px;
-    }
+    max-width: 163px;
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 
@@ -142,15 +125,12 @@
   line-height: 20px;
 
   @media (min-width: $min-width-tablet) {
-    & {
-      max-width: 157px;
-      display: flex;
-      flex-direction: column;
-      gap: 19px;
-      font-size: 16px;
-      line-height: 20px;
-      text-align: end;
-    }
+    max-width: 157px;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    font-size: 16px;
+    text-align: end;
   }
 
   @media (min-width: $min-width-desktop) {
