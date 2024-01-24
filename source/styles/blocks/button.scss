@@ -1,14 +1,10 @@
 .button {
-  min-width: 280px;
-  padding: 10px 44px;
-  margin: 0 20px 20px 20px;
-  display: flex;
-  justify-content: center;
   font-family: $font-oswald;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+  text-decoration: none;
   text-transform: uppercase;
   border: none;
   background-color: $base-color-background;
@@ -21,9 +17,122 @@
   &:active {
     color: rgba(255, 255, 255, 0.3);
   }
+
+  @media (min-width: $min-width-desktop) {
+    top: 456px;
+    left: 190px;
+    margin: 0;
+  }
+}
+
+.button--index {
+  min-width: 280px;
+  padding: 10px 44px;
+  margin: 0 0 5px 0;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $min-width-tablet) {
+    position: relative;
+    bottom: 210px;
+    z-index: 1;
+    min-width: 244px;
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    position: static;
+    margin-top: -208px;
+  }
 }
 
 .button--dropdown {
+  min-width: 280px;
+  padding: 10px 0;
+  margin: 0;
+  margin-top: auto;
   background-color: $color-background;
-  color: #444444;
+  color: $addition-color-text;
+  text-align: center;
+
+  &:hover {
+    background-color: $button-color-variable;
+  }
+
+  &:focus {
+    background-color: $button-color-variable;
+  }
+
+  &:active {
+    background-color: $button-color-variable;
+    color: $addition-color-text;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    & {
+      min-width: 250px;
+    }
+  }
+
+  @media (min-width: $min-width-desktop) {
+    & {
+      min-width: 169px;
+      padding: 10px 0;
+    }
+  }
+}
+
+.button--catalog {
+  min-width: 280px;
+  margin: 0;
+  padding: 10px 0;
+  display: block;
+  text-align: center;
+
+  @media (min-width: $min-width-tablet) {
+    & {
+      min-width: 250px;
+      padding: 10px 94px;
+      margin-bottom: 3px;
+    }
+  }
+
+  @media (min-width: $min-width-desktop) {
+    & {
+      min-width: 169px;
+      padding: 10px 53px;
+    }
+  }
+}
+
+.button--catalog-padding {
+  @media (min-width: $min-width-tablet) {
+    & {
+      min-width: 250px;
+      padding: 10px 94px;
+      margin: 0;
+    }
+  }
+
+  @media (min-width: $min-width-desktop) {
+    & {
+      padding: 10px 0;
+      margin-left: 41px;
+    }
+  }
+}
+
+.button--padding-catalog {
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+
+  @media (min-width: $min-width-desktop) {
+    & {
+      padding: 10px 0;
+      margin-left: 41px;
+    }
+  }
 }

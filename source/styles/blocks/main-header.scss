@@ -1,15 +1,61 @@
 .main-header {
-  min-width: 320px;
+  position: relative;
   min-height: 65px;
+  padding: 13px 20px 10px 20px;
 
   @media (min-width: $min-width-tablet) {
+    padding: 25px 30px 0 30px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    position: relative;
+    padding: 55px 110px 40px 110px;
+  }
+}
+
+.main-header--background {
+  @media (min-width: $min-width-desktop) {
+    &::after {
+      z-index: -1;
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      width: 50vw;
+      margin-right: calc(50% - 50vw);
+      height: 694px;
+      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85));
+    }
+
+    &::before {
+      z-index: -1;
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 50%;
+      width: 720px;
+      min-height: 694px;
+      display: block;
+      background-image: url("../../images/background-cat-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: 1040px 694px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/background-cat-desktop@2x.jpg");
+    }
   }
 }
 
 .main-header__logo-image:hover {
   opacity: 0.8;
+
+  &:focus {
+    opacity: 0.8;
+  }
 
   &:active {
     opacity: 0.6;
