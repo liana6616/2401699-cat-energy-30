@@ -1,6 +1,6 @@
 .catalog-link {
   width: 280px;
-  height: 107px;
+  margin-bottom: 5px;
   display: flex;
   justify-content: flex-start;
   padding: 0 0 0 28px;
@@ -21,9 +21,10 @@
   }
 
   @media (min-width: $min-width-desktop) {
+    height: 0;
+    position: relative;
     top: -51px;
     width: 245px;
-    height: 268px;
   }
 }
 

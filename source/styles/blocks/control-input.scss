@@ -1,4 +1,6 @@
 .control-input {
+  position: relative;
+  top: 0;
   width: 30px;
   height: 30px;
   padding: 0;
@@ -9,6 +11,10 @@
     width: 40px;
     height: 40px;
   }
+}
+
+.control-input--position {
+  top: 33px;
 }
 
 .control-input-checkbox {

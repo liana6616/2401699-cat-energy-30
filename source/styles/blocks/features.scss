@@ -10,7 +10,6 @@
   @media (min-width: $min-width-tablet) {
     max-width: $min-width-tablet;
     padding: 0 30px;
-    margin: 0 auto;
     gap: 30px;
   }
 
@@ -27,7 +26,6 @@
   padding: 30px 30px 26px 19px;
   margin: 0;
   background-color: $color-background;
-  z-index: -1;
 
   @media (min-width: $min-width-tablet) {
     max-width: 708px;
@@ -68,24 +66,24 @@
 }
 
 .features__wrapper--slim {
-  background-image: url("../../images/icons/cat-slim.svg"), url("../../images/icons/radiobutton.svg");
+  background-image: url("../../images/icons/cat-slim.svg");
   background-repeat: no-repeat;
-  background-size: 50px 50px;
-  background-position: 19px 21px;
+  background-size: 50px 56px;
+  background-position: 19px 19px;
 
   @media (min-width: $min-width-tablet) {
     background-position: 425px 80px;
-    background-size: 240px 195px;
+    background-size: 240px 212px;
   }
 
   @media (min-width: $min-width-desktop) {
-    background-position: 52px 42px;
+    background-position: 52px 40px;
     background-size: 100px 106px;
   }
 }
 
 .features__wrapper--weight {
-  background-image: url("../../images/icons/cat-weight.svg"), url("../../images/icons/radiobutton.svg");
+  background-image: url("../../images/icons/cat-weight.svg");
   background-repeat: no-repeat;
   background-size: 69px 50px;
   background-position: 10px 23px;
@@ -96,8 +94,8 @@
   }
 
   @media (min-width: $min-width-desktop) {
-    background-position: 36px 44px;
-    background-size: 133px 101px;
+    background-position: 34px 44px;
+    background-size: 134px 100px;
   }
 }
 
@@ -181,7 +179,7 @@
     top: 2px;
     right: 0;
     width: 32px;
-    height: 10px;
+    height: 20px;
     background-image: url("../../images/icons/icon_arrows.svg");
     background-repeat: no-repeat;
     opacity: 0.8;
@@ -194,8 +192,14 @@
     line-height: normal;
 
     &::after {
-      top: 14px;
-      right: 4px;
+      top: 9px;
+      right: -4px;
+    }
+
+    &:hover::after {
+      height: 20px;
+      top: 9px;
+      right: -4px;
     }
   }
 
@@ -205,13 +209,14 @@
     line-height: normal;
 
     &::after {
-      top: 9px;
-      right: -1px;
+      top: 8px;
+      right: -5px;
     }
 
     &:hover::after {
-      top: 9px;
-      right: -1px;
+      top: 8px;
+      right: -5px;
+      height: 20px;
     }
   }
 }
@@ -225,29 +230,46 @@
     top: 2px;
     right: 0;
     width: 32px;
-    height: 20px;
+    height: 12px;
     background-image: url("../../images/icons/icon_arrow.svg");
     background-repeat: no-repeat;
   }
 
   &:hover::after {
-    position: absolute;
-    content: "";
+    height: 20px;
     top: 2px;
-    right: 0;
-    width: 32px;
-    height: 10px;
-    background-image: url("../../images/icons/icon_arrow.svg");
+    right: -1px;
+    background-image: url("../../images/icons/icon_arrows.svg");
     background-repeat: no-repeat;
     opacity: 0.8;
   }
 
   @media (min-width: $min-width-tablet) {
-    min-width: 155px;
+    &::after {
+      top: 9px;
+      right: -4px;
+    }
 
+    &:hover::after {
+      height: 20px;
+      top: 9px;
+      right: -4px;
+    }
+  }
+
+  @media (min-width: $min-width-desktop) {
     &::after {
       top: 8px;
-      right: -2px;
+      right: -1px;
+      width: 32px;
+      height: 20px;
+    }
+
+    &:hover::after {
+      top: 8px;
+      right: -1px;
+      width: 32px;
+      height: 20px;
     }
   }
 }

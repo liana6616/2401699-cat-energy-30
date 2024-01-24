@@ -7,6 +7,14 @@
   color: $addition-color-text;
   text-transform: uppercase;
 
+  &::-webkit-outer-spin-button {
+    appearance: none;
+  }
+
+  &::-webkit-inner-spin-button {
+    appearance: none;
+  }
+
   &:hover {
     color: $base-color-text;
   }
@@ -28,7 +36,7 @@
 .form-text--name {
   position: relative;
   bottom: 57px;
-  left: 44px;
+  left: 45px;
   color: $base-color-text;
 
   &:focus {
@@ -51,7 +59,8 @@
 
 .form-text--input {
   width: 100%;
-  padding: 12px 49px 13px 17px;
+  margin: 1px 0 0 2px;
+  padding: 13px 49px 12px 14px;
   outline: 1px solid #e7e7e7;
   border: none;
 
@@ -63,8 +72,20 @@
     outline: 2px solid $addition-color-text;
   }
 
-  &:invalid:required {
+  &:user-invalid:required {
     outline: 2px solid #ff8282;
+  }
+
+  &:focus + .form-text-icon {
+    color: $base-color-background;
+  }
+
+  &:active + .form-text-icon {
+    opacity: 0.8;
+  }
+
+  &:user-invalid:required + .form-text-icon {
+    color: #ff8282;
   }
 
   @media (min-width: $min-width-tablet) {
@@ -88,56 +109,16 @@
   }
 }
 
-.form-text--input-email {
-  background-image: url("../../images/icons/icon-email.svg");
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
-  background-position: right 10px top 12px;
-
-  // &:hover {
-  //   color: $base-color-background;
-  // }
-
-  &:invalid:required {
-    stroke: #ff8282;
-  }
-
-  @media (min-width: $min-width-tablet) {
-    min-width: 551px;
-    background-position: right 13px top 17px;
-  }
-
-  @media (min-width: $min-width-desktop) {
-    min-width: 494px;
-    background-position: right 13px top 17px;
-    stroke-linejoin: $base-color-background;
-
-    // &:hover {
-    //   stroke-linecap: $base-color-background;
-    //   opacity: 0.4;
-    // }
-  }
-}
-
-.form-text--input-phone {
-  margin: 0;
-  background-image: url("../../images/icons/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  background-position: right 11px top 13px;
-
-  @media (min-width: $min-width-tablet) {
-    background-position: right 13px top 17px;
-  }
-
-  @media (min-width: $min-width-desktop) {
-    min-width: 472px;
-  }
+.form-text-icon {
+  position: absolute;
+  top: 29%;
+  right: 13px;
+  color: $variable-color;
 }
 
 .form-text--indent {
-  width: 280px;
-  padding: 14px 14px 98px 13px;
+  width: 281px;
+  padding: 14px 14px 98px 14px;
   margin: 38px 0 20px 0;
 
   @media (min-width: $min-width-tablet) {
@@ -156,11 +137,16 @@
 .form-text--position {
   position: relative;
   bottom: 24px;
-  left: 44px;
+  left: 45px;
   color: $base-color-text;
 
   @media (min-width: $min-width-tablet) {
     bottom: 78px;
     left: 60px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    display: block;
+    max-width: 250px;
   }
 }

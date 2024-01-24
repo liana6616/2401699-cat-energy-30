@@ -5,10 +5,16 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   height: 100%;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
   font-family: $font-lato;
   font-size: 14px;
   font-style: normal;
