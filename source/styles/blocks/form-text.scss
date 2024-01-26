@@ -61,7 +61,7 @@
   width: 100%;
   margin: 1px 0 0 2px;
   padding: 13px 49px 12px 14px;
-  outline: 1px solid $decoration;
+  outline: 1px solid #e7e7e7;
   border: none;
 
   &:hover {
@@ -89,7 +89,7 @@
   }
 
   @media (min-width: $min-width-tablet) {
-    padding: 11px 49px 11px 18px;
+    padding: 12px 49px 12px 20px;
   }
 }
 
@@ -114,22 +114,12 @@
   top: 29%;
   right: 13px;
   color: $variable-color;
-
-
-  @media (min-width: $min-width-tablet) {
-    top: 31%;
-  }
-
-  @media (min-width: $min-width-desktop) {
-    right: 16px;
-  }
 }
 
 .form-text--indent {
   width: 281px;
   padding: 14px 14px 98px 14px;
   margin: 38px 0 20px 0;
-  border: 1px solid $decoration;
 
   @media (min-width: $min-width-tablet) {
     width: 628px;
