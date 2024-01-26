@@ -1,13 +1,29 @@
 .catalog-list {
+  position: relative;
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    height: 1px;
+    background: $button-color-variable;
+  }
 
   @media (min-width: $min-width-tablet) {
     padding: 0 30px 70px 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 141px 60px;
+
+    &::before {
+      display: 0;
+    }
   }
 
   @media (min-width: $min-width-desktop) {
@@ -15,5 +31,9 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 143px 80px;
+  }
+
+  &::after {
+    display: none;
   }
 }

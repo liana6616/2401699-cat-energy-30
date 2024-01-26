@@ -366,7 +366,7 @@
 .sample__slider {
   width: 4px;
   height: 256px;
-  background-color: #666666;
+  background-color: $color-decorate;
   position: absolute;
   bottom: 0;
   left: 138px;
@@ -380,7 +380,7 @@
     right: -18px;
     width: 40px;
     height: 40px;
-    border: 2px solid #666666;
+    border: 2px solid $color-decorate;
     border-radius: 20px;
     background-color: $color-text;
   }
@@ -393,7 +393,7 @@
     top: 118px;
     right: -10px;
     mask-image: url("../../images/icons/trigon.svg");
-    background-color: #666666;
+    background-color: $color-decorate;
     background-repeat: no-repeat;
   }
 
