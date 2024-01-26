@@ -60,7 +60,7 @@
       width: 100vw;
       margin-left: calc(50% - 50vw);
       height: 2px;
-      background: #68b738;
+      background: $base-color-background;
       z-index: -1;
     }
   }
@@ -87,7 +87,7 @@
     width: 100vw;
     margin-left: calc(50% - 50vw);
     height: 2px;
-    background: #68b738;
+    background: $base-color-background;
     z-index: -1;
   }
 
@@ -104,7 +104,6 @@
       width: 104vw;
       margin-left: calc(50% - 50vw);
       height: 2px;
-      background: #68b738;
       z-index: -1;
     }
   }
@@ -131,7 +130,7 @@
     width: 100vw;
     margin-left: calc(50% - 50vw);
     height: 2px;
-    background: #68b738;
+    background: $base-color-background;
     z-index: -1;
   }
 
@@ -141,6 +140,7 @@
 
     &::before {
       width: 100vw;
+      top: -14px;
     }
   }
 
@@ -151,13 +151,12 @@
 
     &::before {
       position: absolute;
-      top: -11px;
-      left: -40px;
+      top: -12px;
+      left: -41px;
       content: "";
       width: 100vw;
       margin-left: calc(50% - 50vw);
       height: 2px;
-      background: #68b738;
       z-index: -1;
     }
   }
@@ -172,7 +171,7 @@
 
   @media (min-width: $min-width-tablet) {
     min-width: 628px;
-    padding: 0 0 67px 0;
+    padding: 0 0 70px 0;
     gap: 19px;
   }
 
@@ -201,29 +200,29 @@
     position: relative;
     content: "";
     top: -9px;
-    left: 0;
+    left: -40px;
     width: 100vw;
     margin-left: calc(50% - 50vw);
     height: 1px;
-    background-color: #d9d9d9;
+    background-color: $background-decoration;
   }
 
   &::after {
     position: relative;
     content: "";
     top: 5px;
-    left: 0;
+    left: -40px;
     width: 100vw;
     margin-left: calc(50% - 50vw);
     height: 1px;
-    background-color: #d9d9d9;
+    background-color: $background-decoration;
   }
 
   @media (min-width: $min-width-tablet) {
     width: 628px;
     padding: 25px 0 25px 27px;
-    margin-bottom: 67px;
-    border: 1px solid #e7e7e7;
+    margin-bottom: 66px;
+    border: 1px solid $decoration;
 
     &::before {
       display: none;
@@ -237,8 +236,7 @@
   @media (min-width: $min-width-desktop) {
     width: 570px;
     padding: 25px 0 25px 28px;
-    margin-bottom: 68px;
-    border: 1px solid #e7e7e7;
+    margin-bottom: 70px;
 
     &::before {
       display: none;
@@ -285,7 +283,7 @@
       content: "";
       width: $min-width-tablet;
       height: 2px;
-      background: #68b738;
+      background: $base-color-background;
       z-index: -1;
     }
   }
@@ -312,7 +310,7 @@
     width: 100vw;
     margin-left: calc(50% - 50vw);
     height: 2px;
-    background: #68b738;
+    background: $base-color-background;
     z-index: -1;
   }
 
@@ -323,13 +321,8 @@
 
     &::before {
       position: absolute;
-      top: -88px;
-      left: 0;
+      top: -89px;
       content: "";
-      width: 100vw;
-      margin-left: calc(50% - 50vw);
-      height: 2px;
-      background: #68b738;
       z-index: -1;
     }
   }
@@ -342,6 +335,7 @@
     gap: 80px;
 
     &::before {
+      top: -90px;
       left: 0;
       width: 100vw;
       margin-left: calc(50% - 50vw);
@@ -395,7 +389,7 @@
   }
 
   @media (min-width: $min-width-tablet) {
-    min-width: 568px;
+    min-width: 570px;
   }
 }
 
@@ -482,6 +476,11 @@
   @media (min-width: $min-width-tablet) {
     justify-content: flex-start;
   }
+
+  @media (min-width: $min-width-desktop) {
+    min-height: 54px;
+    margin-top: -45px;
+  }
 }
 
 .form-details__catalog-item-button {
@@ -497,6 +496,7 @@
   color: $color-text;
   border: none;
   text-transform: uppercase;
+  cursor: pointer;
 
   &:hover {
     background-color: $button-color;
