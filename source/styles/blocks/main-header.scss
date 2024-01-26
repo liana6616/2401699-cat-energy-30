@@ -4,7 +4,7 @@
   padding: 13px 20px 10px 20px;
 
   @media (min-width: $min-width-tablet) {
-    padding: 25px 30px 0 30px;
+    padding: 25px 31px 0 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,6 +17,10 @@
 }
 
 .main-header--background {
+  @media (min-width: $min-width-tablet) {
+    padding-right: 34px;
+  }
+
   @media (min-width: $min-width-desktop) {
     &::after {
       z-index: -1;
@@ -27,7 +31,7 @@
       width: 50vw;
       margin-right: calc(50% - 50vw);
       height: 694px;
-      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85));
+      background: $base-layer;
     }
 
     &::before {
@@ -42,10 +46,10 @@
       background-image: url("../../images/background-cat-desktop@1x.jpg");
       background-repeat: no-repeat;
       background-size: 1040px 694px;
-    }
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../images/background-cat-desktop@2x.jpg");
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../images/background-cat-desktop@2x.jpg");
+      }
     }
   }
 }
