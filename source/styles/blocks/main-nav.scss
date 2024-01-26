@@ -23,8 +23,8 @@
     right: 1px;
     width: 24px;
     height: 2px;
-    background-color: $base-color-text;
-    box-shadow: 0 8px 0 0 $base-color-text, 0 16px 0 0 $base-color-text;
+    background-color: #000000;
+    box-shadow: 0 8px 0 0#000000, 0 16px 0 0#000000;
   }
 
   @media (min-width: $min-width-tablet) {
@@ -90,7 +90,7 @@
 .main-nav--opened .main-nav__list {
   z-index: 3;
   position: absolute;
-  top: 64px;
+  top: 65px;
   left: 0;
   width: 100%;
   height: 198px;
@@ -106,6 +106,7 @@
     min-width: 320px;
     height: 1px;
     display: block;
+    background-color: $button-color-variable;
   }
 }
 
@@ -123,6 +124,7 @@
     min-width: 320px;
     height: 1px;
     display: block;
+    background-color: $button-color-variable;
   }
 }
 
@@ -138,7 +140,7 @@
   gap: 46px;
 
   @media (min-width: $min-width-tablet) {
-    margin: 12px 1px 0 0;
+    margin: 12px 5px 0 0;
     display: flex;
     flex-direction: row;
     gap: 33px;
@@ -204,19 +206,5 @@
 
   @media (min-width: $min-width-desktop) {
     top: 36px;
-  }
-}
-
-.main-nav__link--active-no {
-  @media (min-width: $min-width-desktop) {
-    &::before {
-      position: absolute;
-      left: 0;
-      content: "";
-      width: 100%;
-      height: 2px;
-      background-color: $color-text;
-      top: 35px;
-    }
   }
 }
