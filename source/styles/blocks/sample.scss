@@ -265,6 +265,7 @@
   padding-top: 19px;
 
   @media (min-width: $min-width-tablet) {
+    width: 560px;
     position: relative;
     top: 80px;
     left: 74px;
@@ -300,7 +301,8 @@
   }
 
   @media (min-width: $min-width-tablet) {
-    width: 40%;
+    width: 50%;
+    left: 0;
 
     &::before {
       width: 62%;
@@ -342,7 +344,7 @@
   @media (min-width: $min-width-tablet) {
     position: absolute;
     content: "";
-    right: 148px;
+    left: 0;
     top: 19px;
 
     &::after {
@@ -358,7 +360,7 @@
 
     &::after {
       height: 120px;
-      right: 32%;
+      right: 50%;
     }
   }
 }
@@ -372,6 +374,7 @@
   left: 138px;
   border-radius: 2px;
   z-index: 4;
+  cursor: pointer;
 
   &::before {
     position: absolute;

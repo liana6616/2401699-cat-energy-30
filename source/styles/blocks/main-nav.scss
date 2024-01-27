@@ -106,6 +106,7 @@
     min-width: 320px;
     height: 1px;
     display: block;
+    background-color: $color-background;
   }
 }
 
@@ -123,6 +124,7 @@
     min-width: 320px;
     height: 1px;
     display: block;
+    background-color: $color-background;
   }
 }
 
@@ -146,6 +148,16 @@
 
   @media (min-width: $min-width-desktop) {
     margin: 8px 1px 0 0;
+  }
+}
+
+.main-nav__list--position {
+  @media (min-width: $min-width-tablet) {
+    margin: 12px 1px 0 0;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    margin: 9px 77px 0 0;
   }
 }
 

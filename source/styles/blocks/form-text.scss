@@ -37,7 +37,6 @@
   position: relative;
   bottom: 57px;
   left: 45px;
-  color: $base-color-text;
 
   &:focus {
     opacity: 0.5;
@@ -73,7 +72,7 @@
   }
 
   &:user-invalid:required {
-    outline: 2px solid #ff8282;
+    outline: 2px solid $error;
   }
 
   &:focus + .form-text-icon {
@@ -85,7 +84,7 @@
   }
 
   &:user-invalid:required + .form-text-icon {
-    color: #ff8282;
+    color: $error;
   }
 
   @media (min-width: $min-width-tablet) {
@@ -148,7 +147,6 @@
   position: relative;
   bottom: 24px;
   left: 45px;
-  color: $base-color-text;
 
   @media (min-width: $min-width-tablet) {
     bottom: 78px;
