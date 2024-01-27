@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Кэт энерджи</title>
+  <link rel="preload" href="styles/global/fonts.scss" as="font">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
   <link rel="icon" href="source/icon.svg" type="image/svg+xml">
@@ -27,15 +28,15 @@
           </picture>
         </a>
       </div>
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle main-nav__toggle-line" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <nav class="main-nav__wrapper">
           <ul class="main-nav__list main-nav__list--position">
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--color main-nav__link--active main-nav__link--active-no" href="index.html"
-                aria-current="page">
+              <a class="main-nav__link main-nav__link--color main-nav__link--active main-nav__link--active-no"
+                href="index.html" aria-current="page">
                 Главная
               </a>
             </li>
@@ -79,7 +80,7 @@
         <div class="features__wrapper features__wrapper--slim">
           <h2 class="visually-hidden">Выбор питания</h2>
           <ul class="features__list">
-            <li class="features_item">
+            <li class="features__item">
               <h3 class="features__title">Похудение</h3>
               <p class="features__advantages-discription">Ваш кот весит больше собаки и почти утратил способность лазить
                 по
@@ -90,7 +91,7 @@
         </div>
         <div class="features__wrapper features__wrapper--weight">
           <ul class="features__list">
-            <li class="features_item">
+            <li class="features__item">
               <h3 class="features__title">Набор массы</h3>
               <p class="features__advantages-discription">Заработать авторитет среди дворовых котов и даже собак? Серия
                 Cat Energy
@@ -165,6 +166,7 @@
               <div class="sample__slider">
                 <label class="sample__slider-label" for="range-button">
                   <input class="sample__slider-button" type="range" id="range-button" name="range">
+                  <span class="visually-hidden">Кнопка бегунок.</span>
                 </label>
               </div>
               <div class="sample__photo-2">
@@ -199,9 +201,9 @@
         <div class="contacts__map">
           <div class="contacts__map-position">
             <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036296175423!2d30.318176491926938!3d59.93871909742124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca3de3a1%3A0xba80b1be36549aba!2sHtml%20Academy!5e0!3m2!1sru!2sru!4v1703696326123!5m2!1sru!2sru"
-            width="320" height="362" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036296175423!2d30.318176491926938!3d59.93871909742124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca3de3a1%3A0xba80b1be36549aba!2sHtml%20Academy!5e0!3m2!1sru!2sru!4v1703696326123!5m2!1sru!2sru"
+              width="320" height="362" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
         <div class="main-footer__wrap">

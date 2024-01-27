@@ -255,6 +255,10 @@
   @media (min-width: $min-width-tablet) {
     height: 40px;
   }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .form-details__filter-item-alternative {

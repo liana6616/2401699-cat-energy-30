@@ -376,8 +376,7 @@
   @media (min-width: $min-width-desktop) {
     max-width: 895px;
     padding: 0 0 0 324px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     align-items: center;
 
     &::after {
@@ -393,6 +392,11 @@
 
   @media (min-width: $min-width-tablet) {
     padding-bottom: 21px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    min-width: 0;
+    margin-right: -31px;
   }
 }
 
