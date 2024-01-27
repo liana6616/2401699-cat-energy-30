@@ -1,9 +1,9 @@
 .form-details {
-  width: 320px;
+  width: 280px;
   padding-bottom: 29px;
 
   @media (min-width: $min-width-tablet) {
-    width: 708px;
+    width: 698px;
     padding: 0;
   }
 
@@ -38,12 +38,12 @@
   &::before {
     position: absolute;
     top: -11px;
-    left: 0;
+    left: -1px;
     content: "";
     width: 100vw;
     margin-left: calc(50% - 50vw);
     height: 2px;
-    background: #68b738;
+    background: $base-color-background;
     z-index: -1;
   }
 
@@ -200,7 +200,7 @@
     position: relative;
     content: "";
     top: -9px;
-    left: -40px;
+    left: 0;
     width: 100vw;
     margin-left: calc(50% - 50vw);
     height: 1px;
@@ -211,7 +211,7 @@
     position: relative;
     content: "";
     top: 5px;
-    left: -40px;
+    left: 0;
     width: 100vw;
     margin-left: calc(50% - 50vw);
     height: 1px;
