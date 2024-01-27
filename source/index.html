@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Кэт энерджи</title>
+  <link rel="preload" href="styles/global/fonts.scss" as="font">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
   <link rel="icon" href="source/icon.svg" type="image/svg+xml">
@@ -27,7 +28,7 @@
           </picture>
         </a>
       </div>
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle main-nav__toggle-line" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -79,7 +80,7 @@
         <div class="features__wrapper features__wrapper--slim">
           <h2 class="visually-hidden">Выбор питания</h2>
           <ul class="features__list">
-            <li class="features_item">
+            <li class="features__item">
               <h3 class="features__title">Похудение</h3>
               <p class="features__advantages-discription">Ваш кот весит больше собаки и почти утратил способность лазить
                 по
@@ -90,7 +91,7 @@
         </div>
         <div class="features__wrapper features__wrapper--weight">
           <ul class="features__list">
-            <li class="features_item">
+            <li class="features__item">
               <h3 class="features__title">Набор массы</h3>
               <p class="features__advantages-discription">Заработать авторитет среди дворовых котов и даже собак? Серия
                 Cat Energy
@@ -165,6 +166,7 @@
               <div class="sample__slider">
                 <label class="sample__slider-label" for="range-button">
                   <input class="sample__slider-button" type="range" id="range-button" name="range">
+                  <span class="visually-hidden">Кнопка бегунок.</span>
                 </label>
               </div>
               <div class="sample__photo-2">
