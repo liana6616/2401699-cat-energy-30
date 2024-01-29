@@ -343,11 +343,27 @@
   }
 }
 
-.form-details__text:has(.form-details__input:disabled) {
+.form-details__input:disabled {
   opacity: 0.3;
 }
 
-.form-details__text:has(.form-details__control:disabled) {
+.form-details__input:disabled ~ .form-details__text {
+  opacity: 0.3;
+}
+
+.form-details__input:disabled ~ .form-details__radiobutton {
+  opacity: 0.3;
+}
+
+.form-details__control:disabled {
+  opacity: 0.3;
+}
+
+.form-details__control:disabled ~ .form-details__text {
+  opacity: 0.3;
+}
+
+.form-details__control:disabled ~ .form-details__input-box {
   opacity: 0.3;
 }
 
