@@ -37,6 +37,7 @@
   position: relative;
   bottom: 57px;
   left: 45px;
+  color: $variable-color;
 
   &:focus {
     opacity: 0.5;
@@ -148,6 +149,7 @@
   position: relative;
   bottom: 24px;
   left: 45px;
+  color: $variable-color;
 
   @media (min-width: $min-width-tablet) {
     bottom: 78px;

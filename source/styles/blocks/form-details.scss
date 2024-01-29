@@ -261,10 +261,94 @@
   }
 }
 
-.form-details__filter-item-alternative {
+.form-details__input {
+  position: relative;
+  top: 33px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  appearance: none;
+
+  @media (min-width: $min-width-tablet) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.form-details__radiobutton {
+  position: relative;
+  bottom: 34px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid $background;
+  background: $color-text;
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
+
   &:disabled {
     opacity: 0.3;
   }
+
+  @media (min-width: $min-width-tablet) {
+    bottom: 44px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.form-details__control {
+  position: relative;
+  top: 33px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  appearance: none;
+
+  @media (min-width: $min-width-tablet) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.form-details__control:checked + .form-details__input-box {
+  background: url("../../images/icons/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 19px auto;
+  color: $base-color-background;
+
+  @media (min-width: $min-width-tablet) {
+    background-size: 23px auto;
+    position: relative;
+    bottom: 43px;
+    margin-right: 272px;
+  }
+}
+
+.form-details__input:checked + .form-details__radiobutton {
+  background: url("../../images/icons/radiobutton.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px 14px;
+  color: $base-color-background;
+
+  @media (min-width: $min-width-tablet) {
+    background-size: 18px;
+  }
+}
+
+.form-details__text:has(.form-details__input:disabled) {
+  opacity: 0.3;
+}
+
+.form-details__text:has(.form-details__control:disabled) {
+  opacity: 0.3;
 }
 
 .form-details__filter--email {
@@ -467,6 +551,40 @@
   @media (min-width: $min-width-desktop) {
     min-width: 325px;
     margin-bottom: -69px;
+  }
+}
+
+.form-details__filter-item-alternative__input {
+  position: relative;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  appearance: none;
+
+  @media (min-width: $min-width-tablet) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.form-details__input-box {
+  display: block;
+  width: 29px;
+  height: 30px;
+  border: 1px solid $background;
+  background: $color-text;
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    bottom: 43px;
   }
 }
 
